@@ -1,2 +1,2 @@
-# htw
-HTW Chur
+# HTW Chur
+Photonics 18
