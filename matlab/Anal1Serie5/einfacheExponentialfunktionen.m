@@ -11,10 +11,8 @@ res=zeros(7,4)
 i=1;
 while i<8 
 clc
-f=@(x)a.^stellen(i);
-
-res(i,:)=f(a)
-
+    f=@(x)a.^stellen(i);
+    res(i,:)=f(a)
 i=1+i;
 end
 
@@ -29,7 +27,7 @@ while i<5
     f_data=f(x_data);
     % Plot :
     plot(x_data, f_data, 'linewidth', lw);hold on;
-    i=1+i;
+i=1+i;
 end
 grid on;
 
