@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="scanf" targetName="scanf" />
+      <config projectName="Weihnachtsbaum" targetName="Weihnachtsbaum" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32af7722-4a33-44a0-a5ef-1527d6122eec" name="Default Changelist" comment="">
+    <list default="true" id="dd23faa8-8e6f-43d1-8590-d2edb777d5f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../AufbauCProgramm/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AufbauCProgramm/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AufbauCProgramm/cmake-build-debug/CMakeFiles/3.12.2/CMakeCCompiler.cmake" beforeDir="false" />
@@ -45,6 +45,7 @@
       <change beforePath="$PROJECT_DIR$/../AufbauCProgramm/cmake-build-debug/Programmaufbau.cbp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AufbauCProgramm/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AufbauCProgramm/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scanf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scanf/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../matlab/Linalg1/Gleichungssystem.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../matlab/Linalg1/Gleichungssystem.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../matlab/template.m" beforeDir="false" />
     </list>
@@ -57,25 +58,23 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
-    <session id="-1436673367">
+    <session id="-1027865927">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="1506" />
+          <entry key="c" value="227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="1506" />
+          <entry key="Doxygen file" value="1" />
+          <entry key="ObjectiveC" value="226" />
         </counts>
       </usages-collector>
     </session>
@@ -90,11 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
-              <folding>
-                <element signature="e#149#167#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="660">
+              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -117,9 +113,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="height" value="1131" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -148,20 +145,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.scanf">
+  <component name="RunManager" selected="Application.Weihnachtsbaum">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="scanf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="scanf" TARGET_NAME="scanf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="scanf" RUN_TARGET_NAME="scanf">
+    <configuration name="Weihnachtsbaum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Weihnachtsbaum" TARGET_NAME="Weihnachtsbaum" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Weihnachtsbaum" RUN_TARGET_NAME="Weihnachtsbaum">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.scanf" />
+      <item itemvalue="Application.Weihnachtsbaum" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -169,39 +166,36 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="32af7722-4a33-44a0-a5ef-1527d6122eec" name="Default Changelist" comment="" />
-      <created>1540626188176</created>
+      <changelist id="dd23faa8-8e6f-43d1-8590-d2edb777d5f1" name="Default Changelist" comment="" />
+      <created>1541253293156</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1540626188176</updated>
-      <workItem from="1540626189688" duration="192000" />
-      <workItem from="1540804757458" duration="4193000" />
-      <workItem from="1540809518918" duration="6787000" />
-      <workItem from="1541091147153" duration="9000" />
-      <workItem from="1541091205693" duration="539000" />
-      <workItem from="1541253246293" duration="46000" />
+      <updated>1541253293156</updated>
+      <workItem from="1541253294391" duration="674000" />
+      <workItem from="1541254207508" duration="215000" />
+      <workItem from="1541255020103" duration="972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11766000" />
+    <option name="totallyTimeSpent" value="1861000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1131" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1773163" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30973452" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21944177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32920355" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32916266" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -224,11 +218,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#149#167#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="660">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
         </state>
       </provider>
     </entry>
