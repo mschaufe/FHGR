@@ -11,93 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e2be7d5-2fe7-45cf-a4a4-612cf26ad177" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/informatik.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/3.12.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/3.12.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/3.12.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/Programmaufbau.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/Programmaufbau" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/Programmaufbau.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AufbauCProg_CallByValue/main.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CallByReference/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../CallByReference/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/.idea/scanf.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/CMakeFiles/scanf.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/scanf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/cmake-build-debug/scanf.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scanf/main.c" beforeDir="false" />
-    </list>
+    <list default="true" id="8e2be7d5-2fe7-45cf-a4a4-612cf26ad177" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,12 +168,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540915326820</updated>
       <workItem from="1540915328834" duration="1160000" />
-      <workItem from="1541258159518" duration="710000" />
+      <workItem from="1541258159518" duration="837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1870000" />
+    <option name="totallyTimeSpent" value="1997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
