@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main() {
     /* Wartet auf ein Enter */
     while( (getchar()) !='\n')
         printf("Enter Gedrueckt!");
