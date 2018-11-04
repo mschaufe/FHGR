@@ -1,4 +1,9 @@
-/* muster.c */
+/*****************************
+ * Marc Schaufelberger *
+ * HTW CHUR *
+ * 15. OKT 2018 *
+ * Call by Value
+******************************/
 
 #include <stdio.h>
 
