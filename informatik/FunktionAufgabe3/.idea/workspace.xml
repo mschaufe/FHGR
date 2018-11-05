@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Rekursion" targetName="Rekursion" />
+      <config projectName="FunktionAufgabe3" targetName="FunktionAufgabe3" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,8 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76b6b225-7b42-41cc-b6e4-660a8055d139" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+    <list default="true" id="7565f241-ad7d-4ad8-8151-d27ae6ab66e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Rekursion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rekursion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rekursion/cmake-build-debug/CMakeFiles/Rekursion.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Rekursion/cmake-build-debug/CMakeFiles/Rekursion.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rekursion/cmake-build-debug/Rekursion" beforeDir="false" afterPath="$PROJECT_DIR$/../Rekursion/cmake-build-debug/Rekursion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rekursion/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Rekursion/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,23 +26,21 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
-    <session id="1483164429">
+    <session id="-1451928577">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="16" />
+          <entry key="c" value="279" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="15" />
+          <entry key="ObjectiveC" value="279" />
         </counts>
       </usages-collector>
     </session>
@@ -54,8 +55,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="739">
+              <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+              <folding>
+                <element signature="e#149#167#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +92,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -109,20 +113,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Rekursion">
+  <component name="RunManager" selected="Application.FunktionAufgabe3">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Rekursion" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rekursion" TARGET_NAME="Rekursion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rekursion" RUN_TARGET_NAME="Rekursion">
+    <configuration name="FunktionAufgabe3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FunktionAufgabe3" TARGET_NAME="FunktionAufgabe3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FunktionAufgabe3" RUN_TARGET_NAME="FunktionAufgabe3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.Rekursion" />
+      <item itemvalue="Application.FunktionAufgabe3" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -130,17 +134,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="76b6b225-7b42-41cc-b6e4-660a8055d139" name="Default Changelist" comment="" />
-      <created>1541409874857</created>
+      <changelist id="7565f241-ad7d-4ad8-8151-d27ae6ab66e1" name="Default Changelist" comment="" />
+      <created>1541411214312</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541409874857</updated>
-      <workItem from="1541409877854" duration="1015000" />
+      <updated>1541411214312</updated>
+      <workItem from="1541411215749" duration="1478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1015000" />
+    <option name="totallyTimeSpent" value="1478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -157,7 +161,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32920355" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22477876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -180,8 +184,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="739">
+          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+          <folding>
+            <element signature="e#149#167#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

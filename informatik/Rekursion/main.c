@@ -5,7 +5,7 @@
  * Rekursion
 ******************************/
 
-#include<stdio.h>
+#include <stdio.h>
 
 int fakultaet(int x) {
     if(x > 1) {
