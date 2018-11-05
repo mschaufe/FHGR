@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="increment_decrement" targetName="increment_decrement" />
+      <config projectName="Rekursion" targetName="Rekursion" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab8c56d-7d36-40ac-983b-cb6a9beb4152" name="Default Changelist" comment="" />
+    <list default="true" id="76b6b225-7b42-41cc-b6e4-660a8055d139" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../printF/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../printF/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../increment_decrement/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../increment_decrement/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,23 +25,22 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
-    <session id="-607695173">
+    <session id="1483164429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="255" />
+          <entry key="c" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="254" />
+          <entry key="ObjectiveC" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -52,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="315">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -107,20 +110,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.increment_decrement">
+  <component name="RunManager" selected="Application.Rekursion">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="increment_decrement" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="increment_decrement" TARGET_NAME="increment_decrement" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="increment_decrement" RUN_TARGET_NAME="increment_decrement">
+    <configuration name="Rekursion" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Rekursion" TARGET_NAME="Rekursion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Rekursion" RUN_TARGET_NAME="Rekursion">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.increment_decrement" />
+      <item itemvalue="Application.Rekursion" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -128,17 +131,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aab8c56d-7d36-40ac-983b-cb6a9beb4152" name="Default Changelist" comment="" />
-      <created>1541320377052</created>
+      <changelist id="76b6b225-7b42-41cc-b6e4-660a8055d139" name="Default Changelist" comment="" />
+      <created>1541409874857</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541320377052</updated>
-      <workItem from="1541320378342" duration="681000" />
+      <updated>1541409874857</updated>
+      <workItem from="1541409877854" duration="137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="681000" />
+    <option name="totallyTimeSpent" value="137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -155,7 +158,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32920355" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32920355" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -178,8 +181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
