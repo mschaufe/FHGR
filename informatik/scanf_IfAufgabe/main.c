@@ -16,7 +16,7 @@ int clean_stdin()
 
 int main()
 {
-    /* Get 2 Numbers from User and check them*/
+    /* Get 2 numbers from user and check them*/
     int rows1, rows2 =0;
     char c;
     do
@@ -25,13 +25,6 @@ int main()
 
     } while (((scanf("%d%c", &rows1, &c)!=2 || c!='\n') && clean_stdin()) || rows1<1 || rows1>99);
 
-    /* Das Programm geht weiter wenn                        bis
-     * scanf  2 ist (also zwei Elemente erfasst wurden)     oder
-     * der Zweite Wert ein Enter war ("\n")                 und
-     * clean_stdin()==1 ist (gibt immer 1 zurueck)          oder
-     * der erste Wert kleiner als 1                         oder
-     * der erste Wert groesser als 99 ist
-     * */
     do
     {
         printf("\nEnter your second number from 1 to 99: ");

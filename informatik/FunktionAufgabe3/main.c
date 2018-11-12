@@ -29,7 +29,7 @@ int sub(int z1, int z2){
 
 int main()
 {
-    /* Get 2 Numbers from User and check them*/
+    /* Get numbers from user and check them*/
     int z1, z2, o =0;
     char c;
     do
