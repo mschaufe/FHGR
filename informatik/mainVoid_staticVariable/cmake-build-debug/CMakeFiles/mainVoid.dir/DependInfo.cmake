@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/ms/Documents/GitHub/HTW/informatik/mainVoid/main.c" "/Users/ms/Documents/GitHub/HTW/informatik/mainVoid/cmake-build-debug/CMakeFiles/mainVoid.dir/main.c.o"
+  "/Users/ms/Documents/GitHub/HTW/informatik/mainVoid_staticVariable/main.c" "/Users/ms/Documents/GitHub/HTW/informatik/mainVoid_staticVariable/cmake-build-debug/CMakeFiles/mainVoid.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

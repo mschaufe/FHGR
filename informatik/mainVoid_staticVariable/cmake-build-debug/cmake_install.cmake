@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ms/Documents/GitHub/HTW/informatik/mainVoid
+# Install script for directory: /Users/ms/Documents/GitHub/HTW/informatik/mainVoid_staticVariable
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ms/Documents/GitHub/HTW/informatik/mainVoid/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ms/Documents/GitHub/HTW/informatik/mainVoid_staticVariable/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -14,4 +14,4 @@ int main()              /* Würde mit main(void) in diesem Fall nicht gehen, da 
         main(10);
     }
 }
-/* Output: 3 3 2 1 */
+/* Output: 4 3 2 1 */
