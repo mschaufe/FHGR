@@ -34,7 +34,7 @@ void selectionsort (int arr[], int n) {
 
 
 int main() {
-    int arr[] = {99,3,9,9,72,11,9};
+    int arr[] = {99,3,9,9,72,11,1};
     int n = sizeof(arr)/sizeof(arr[0]);
     selectionsort(arr, n);
     printf("Sorted array: \n");
