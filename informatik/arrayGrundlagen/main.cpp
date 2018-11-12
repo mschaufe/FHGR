@@ -25,8 +25,8 @@ int main()
 {
     /* Get 2 Numbers from User and check them*/
     int arr[5];
-    char c,i;
-    for (i=0; i<5; i++){
+    char c;
+    for (int i=0; i<5; i++){
         do
         {
             printf("\nEnter your first number from 1 to 99: ");
