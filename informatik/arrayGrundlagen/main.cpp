@@ -23,7 +23,7 @@ void printArray(int arr[], int size)
 
 int main()
 {
-    /* Get numbers from User and check them*/
+    /* Get numbers from user and check them*/
     int arr[5];
     char c;
     for (int i=0; i<5; i++){
