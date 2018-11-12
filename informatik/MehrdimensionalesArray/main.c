@@ -1,3 +1,10 @@
+/*****************************
+ * Marc Schaufelberger *
+ * HTW CHUR *
+ * 12. NOV 2018 *
+ * Mehrdimensionales Array 8x8*
+******************************/
+
 #include <stdio.h>
 
 /* Function to print an 2D array */
