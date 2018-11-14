@@ -19,7 +19,7 @@
    | single-precision floating-point (7 Stellen)  | float          | 32  | 4     | 1.17E-38 .. 3.4E38              |
    | double-precision floating-point (19 Stellen) | double         | 64  | 8     | 2.2E-308 .. 1.8E308             |
 ## 1. Head ##
-   #### Header ####
+   #### Header comment ####
       /*****************************
        * Marc Schaufelberger *
        * HTW CHUR *
@@ -87,10 +87,32 @@
 
    ```
    > Wenn die eingegebene Zahl in diesem Fall zwischen 1 und 99 liegt, dann wird ihr Wert in rows1 gespeichert.
-   
+   #### Getchar ####
+   ```C
+   while( (getchar()) !='\n'){
+      printf("Enter Gedrueckt!");
+      }
+   return EXIT_SUCCESS;
+   ```
+   > Wartet auf ein Enter
 ## 1. Schleifen ##
    #### for ####
+   Die for Schleife verwenden wir, wenn die Anzahl der Durchläufe bekannt ist. D.h. es ist eine Zähler-gesteuerte Schleife.
+   ```C
+   for (int i=1; i<=3; i++)
+   {
+       printf("%d\n", i);
+   }
+   ```
    #### while ####
+   Die while Schleife läuft solange wie die Bedingung im Schleifenkopf wahr ist, und bricht dann ab, wenn diese falsch wird. Um Zählvariablen, in unserem Beispiel i, muß man sich selber kümmern.
+   ```C
+   int i=0;
+   while(i < 10) {
+      // weitere Anweisungen
+      i++;
+   }
+   ```
    #### do while ####
    #### do while ####
 ## 1. Array ##
