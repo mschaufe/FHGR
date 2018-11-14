@@ -21,7 +21,7 @@
 ## 1. Printf ##
    #### Formatelemente ####
    Formatelemente von printf:
-   ```
+   ``` C
    printf("Integer: %d\n", 42);
    printf("Double: %.6f\n", 3.141);
    printf("Zeichen: %c\n", 'z');
@@ -31,7 +31,7 @@
    printf("Und zum Schluss geben wir noch das Prozentzeichen aus: %%\n\n");
    ```
    Flags:
-   ```
+   ``` C
    printf("Zahl 67:%+i\n", 67);
    printf("Zahl 67:%-i\n", -67);
    printf("Zahl 67:% i\n", 67);
