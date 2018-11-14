@@ -19,6 +19,26 @@
    | single-precision floating-point (7 Stellen)  | float          | 32  | 4     | 1.17E-38 .. 3.4E38              |
    | double-precision floating-point (19 Stellen) | double         | 64  | 8     | 2.2E-308 .. 1.8E308             |
 ## 1. Printf ##
+   #### Formatelemente ####
+   Formatelemente von printf:
+   ```
+   printf("Integer: %d\n", 42);
+   printf("Double: %.6f\n", 3.141);
+   printf("Zeichen: %c\n", 'z');
+   printf("Zeichenkette: %s\n", "abc");
+   printf("43 Dezimal ist in Oktal: %o\n", 43);
+   printf("43 Dezimal ist in Hexadezimal: %x\n", 43);
+   printf("Und zum Schluss geben wir noch das Prozentzeichen aus: %%\n\n");
+   ```
+   Flags:
+   ```
+   printf("Zahl 67:%+i\n", 67);
+   printf("Zahl 67:%-i\n", -67);
+   printf("Zahl 67:% i\n", 67);
+   printf("Zahl 67:%#x\n", 67);
+   printf("Zahl 0:%0x\n", 10);
+   ```
+
 ## 1. Scanf ##
 ## 1. Schleifen ##
    #### for ####
