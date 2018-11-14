@@ -20,7 +20,6 @@
    | double-precision floating-point (19 Stellen) | double         | 64  | 8     | 2.2E-308 .. 1.8E308             |
 ## 1. Printf ##
    #### Formatelemente ####
-   Formatelemente von printf:
    ``` C
    printf("Integer: %d\n", 42);
    printf("Double: %.6f\n", 3.141);
@@ -56,6 +55,29 @@
    ```
 
 ## 1. Scanf ##
+   #### Allgemein ####
+   #### Eingabeprüfung ####
+   Funktion `clean_stdin()`
+   ``` C
+   int clean_stdin()
+   {
+       while (getchar()!='\n');
+       return 1;
+   }
+   ```
+   Im `main()`
+   ``` C
+   int rows1 = 0;
+   char c;
+   do
+   {
+       printf("\nEnter a number from 1 to 99: ");
+       
+   } while (((scanf("%d%c", &rows1, &c)!=2 || c!='\n') && clean_stdin()) || rows1<1 || rows1>99);
+
+   ```
+   > Wenn die eingegebene Zahl in diesem Fall zwischen 1 und 99 liegt, dann wird ihr Wert in rows1 gespeichert.
+   
 ## 1. Schleifen ##
    #### for ####
    #### while ####
