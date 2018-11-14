@@ -1,17 +1,38 @@
 /*****************************
  * Marc Schaufelberger *
  * HTW CHUR *
- * 4. Nov 2018 *
- * int main(void) & static int
+ * 12. Nov 2018 *
+ * Array Aufgabe *
 ******************************/
 
 #include <stdio.h>
-int main()              /* Würde mit main(void) in diesem Fall nicht gehen, da später main(10) zurück kommt. */
+#include <stdlib.h>
+int clean_stdin()
 {
-    static int i = 5;   /* Variable wird nicht jedes Mal neu gesetzt. */
-    if (--i){           /* Bedeutet so viel wie if(--i != false) - wird bei 0 beendet. */
-        printf("%d ", i);
-        main(10);
-    }
+    while (getchar()!='\n');
+    return 1;
 }
-/* Output: 3 3 2 1 */
+
+/* Function to print an array */
+void printArray(int arr[], int size){
+    for (int i=0; i < size; i++) {
+        printf("%d ", arr[i]);
+        }
+    }
+
+int main()
+{
+    /* Get numbers from user and check them*/
+    int arr[5];
+    char c;
+    for (int i=0; i<5; i++){
+        do
+        {
+            printf("\nEnter your first number from 1 to 99: ");
+        } while (((scanf("%d%c", &arr[i], &c)!=2 || c!='\n') && clean_stdin()) || arr[i]<1 || arr[i]>99);
+    }
+    printf("\nArray; \n\n");
+    printArray(arr, 5);
+    printf("\n");
+    return 0;
+}
