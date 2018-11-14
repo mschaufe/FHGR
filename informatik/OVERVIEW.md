@@ -1,6 +1,6 @@
 # Überblick C
 
-## 1. Datentypen ##
+## 0. Datentypen ##
    #### Signed / Unsigned ####
    Die ganzzahligen Typen können  `signed` oder `unsigned` sein (signed int, unsigned int): Dies weist darauf
    hin, ob im Binärwort für den Wert das erste Bit als Vorzeichenbit verwendet
@@ -28,7 +28,7 @@
       ******************************/
 
 
-## 1. Printf ##
+## 2. Printf ##
    #### Formatelemente ####
    ``` C
    printf("Integer: %d\n", 42);
@@ -64,7 +64,7 @@
    \0 ist die Endmarkierung einer Zeichenkette
    ```
 
-## 1. Scanf ##
+## 3. Scanf ##
    #### Allgemein ####
    #### Eingabeprüfung ####
    Neue Funktion `clean_stdin()` erstellen
@@ -88,6 +88,7 @@
    ```
    > Wenn die eingegebene Zahl in diesem Fall zwischen 1 und 99 liegt, dann wird ihr Wert in rows1 gespeichert.
    #### Getchar ####
+   Mit dem Befehl getchar wird das Programm angehalten und läuft erst weiter, wenn der Benutzer eine Taste drückt.
    ```C
    while( (getchar()) !='\n'){
       printf("Enter Gedrueckt!");
@@ -95,7 +96,7 @@
    return EXIT_SUCCESS;
    ```
    > Wartet auf ein Enter
-## 1. Schleifen ##
+## 4. Schleifen ##
    #### for ####
    Die for Schleife verwenden wir, wenn die Anzahl der Durchläufe bekannt ist. D.h. es ist eine Zähler-gesteuerte Schleife.
    ```C
@@ -114,10 +115,17 @@
    }
    ```
    #### do while ####
-   #### do while ####
-## 1. Array ##
-  #### 1. 2D Array   ####
-  #### 1. Bubbelsort   ####
-  #### 1. Selectionsort   ####
+   Während die While-Schleife ausgeführt wird, solange die Bedingung gegeben ist, wird die Do-While-Schleife zunächst einmal ausgeführt und erst anschließend geprüft, ob die Bedingung zutrifft. 
+   ```C
+   int i = 0;  
+    do  
+    {  
+        printf_s("\n%d",i++);  
+    } while (i < 3);  
+   ```
+## 5. Array ##
+  #### 2D Array   ####
+  #### Bubbelsort   ####
+  #### Selectionsort   ####
   
 
