@@ -18,6 +18,16 @@
    | unsigned long integer                        | unsigned long  | 32  | 4     | 0 .. 4 294 967 295              |
    | single-precision floating-point (7 Stellen)  | float          | 32  | 4     | 1.17E-38 .. 3.4E38              |
    | double-precision floating-point (19 Stellen) | double         | 64  | 8     | 2.2E-308 .. 1.8E308             |
+## 1. Head ##
+   #### Header ####
+      /*****************************
+       * Marc Schaufelberger *
+       * HTW CHUR *
+       * 00. XXX 2018 *
+       * Projekt
+      ******************************/
+
+
 ## 1. Printf ##
    #### Formatelemente ####
    ``` C
@@ -57,7 +67,7 @@
 ## 1. Scanf ##
    #### Allgemein ####
    #### Eingabeprüfung ####
-   Funktion `clean_stdin()`
+   Neue Funktion `clean_stdin()` erstellen
    ``` C
    int clean_stdin()
    {
