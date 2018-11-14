@@ -39,6 +39,7 @@
    printf("Zahl 0:%0x\n", 10);
    ```
    #### Escape-Sequenzen ####
+   Eine Escape-Sequenz ist eine Zeichenkombination in der technischen Informatik, die keinen Text repräsentiert, sondern vom Gerät abgefangen wird und eine Sonderfunktion ausführt. Bei einem Bildschirmterminal kann dies z. B. die Cursor-Positionierung sein, bei einem Drucker die Umschaltung auf eine andere Schriftgröße oder das Auswerfen der Seite (ANSI-Escapesequenz).
    ```
    \n (new line) = bewegt den Cursor auf die Anfangsposition der nächsten Zeile.
    \t (horizontal tab) = Setzt den Tabulator auf die nächste horizontale Tabulatorposition.
