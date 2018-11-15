@@ -1,11 +1,11 @@
 # Überblick C
 
 ## 0. Datentypen ##
-   #### Signed / Unsigned ####
+   ### Signed / Unsigned ###
    Die ganzzahligen Typen können  `signed` oder `unsigned` sein (signed int, unsigned int): Dies weist darauf
    hin, ob im Binärwort für den Wert das erste Bit als Vorzeichenbit verwendet
    wird, oder nicht.
-   #### Variablentypen in C ####
+   ### Variablentypen in C ###
    | Type                                         | Keyword        | Bit | Bytes | Range                           |
    |----------------------------------------------|----------------|-----|-------|---------------------------------|
    | character                                    | char           | 8   | 1     | -128 .. 127                     |
@@ -19,7 +19,7 @@
    | single-precision floating-point (7 Stellen)  | float          | 32  | 4     | 1.17E-38 .. 3.4E38              |
    | double-precision floating-point (19 Stellen) | double         | 64  | 8     | 2.2E-308 .. 1.8E308             |
 ## 1. Head ##
-   #### Header comment ####
+   ### Header comment ###
       /*****************************
        * Marc Schaufelberger *
        * HTW CHUR *
@@ -29,7 +29,7 @@
 
 
 ## 2. Printf ##
-   #### Formatelemente ####
+   ### Formatelemente ###
    ``` C
    printf("Integer: %d\n", 42);
    printf("Double: %.6f\n", 3.141);
@@ -39,7 +39,7 @@
    printf("43 Dezimal ist in Hexadezimal: %x\n", 43);
    printf("Und zum Schluss geben wir noch das Prozentzeichen aus: %%\n\n");
    ```
-   #### Flags ####
+   ### Flags ###
    ``` C
    printf("Zahl 67:%+i\n", 67);
    printf("Zahl 67:%-i\n", -67);
@@ -65,8 +65,8 @@
    ```
 
 ## 3. Scanf ##
-   #### Allgemein ####
-   #### Eingabeprüfung ####
+   ### Allgemein ###
+   ### Eingabeprüfung ###
    Mit diesem Code wird eine Zahl eingelesen und geprüft, ob sie den Vorgaben entspricht.<br><br>
    Neue Funktion `clean_stdin()` erstellen
    ``` C
@@ -88,7 +88,7 @@
 
    ```
    > Wenn die eingegebene Zahl in diesem Fall zwischen 1 und 99 liegt, dann wird ihr Wert in rows1 gespeichert.
-   #### Getchar ####
+   ### Getchar ###
    Mit dem Befehl getchar wird das Programm angehalten und läuft erst weiter, wenn der Benutzer eine Taste drückt.
    ```C
    while( (getchar()) !='\n'){
@@ -98,10 +98,10 @@
    ```
    > Wartet auf ein Enter
 ## 4. Schleifen ##
-   #### Increment / Decrement ####
+   ### Increment / Decrement ###
    `++i` Erhöht den Wert um eins und gibt den erhöhten Wert zurück.<br>
    `i++` gibt den Wert i weiter und erhöht ihn anschliessend.
-   #### Static ####
+   ### Static ###
    Variable wird nicht jedes Mal neu initialisiert.
    ```C
    static int i = 5;
@@ -111,7 +111,7 @@
     }
    ```
    > Output: 4 3 2 1
-   #### For ####
+   ### For ###
    Die for Schleife verwenden wir, wenn die Anzahl der Durchläufe bekannt ist. D.h. es ist eine Zähler-gesteuerte Schleife.
    ```C
    for (int i=1; i<=3; i++)
@@ -119,7 +119,7 @@
        printf("%d\n", i);
    }
    ```
-   #### While ####
+   ### While ###
    Die while Schleife läuft solange wie die Bedingung im Schleifenkopf wahr ist, und bricht dann ab, wenn diese falsch wird. Um Zählvariablen, in unserem Beispiel i, muß man sich selber kümmern.
    ```C
    int i=0;
@@ -128,7 +128,7 @@
       i++;
    }
    ```
-   #### Do while ####
+   ### Do while ###
    Während die While-Schleife ausgeführt wird, solange die Bedingung gegeben ist, wird die Do-While-Schleife zunächst einmal ausgeführt und erst anschließend geprüft, ob die Bedingung zutrifft. 
    ```C
    int i = 0;  
@@ -137,7 +137,7 @@
         printf_s("\n%d",i++);  
     } while (i < 3);  
    ```
-   #### Rekursion ####
+   ### Rekursion ###
    Das ist ein Beispiel für Rekursion. Es wird in einer Funktion die gleiche Funktion nochmals aufgerufen.
    ```C
    int fakultaet(int x) {
@@ -150,7 +150,7 @@
    ```
    
 ## 5. Array ##
-  #### Print Array ####
+  ### Print Array ###
   Das ist eine Funktion um ein eindimensionales Array au zu geben.
   ```C
   /* Function to print an array */
@@ -179,8 +179,8 @@
    ```C
   print_2D_Array(8, 8, arr);
   ```
-  #### 2D Array   ####
-  #### Bubbelsort   ####
-  #### Selectionsort   ####
+  ### 2D Array   ###
+  ### Bubbelsort   ###
+  ### Selectionsort   ###
   
 
