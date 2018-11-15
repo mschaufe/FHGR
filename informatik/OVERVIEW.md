@@ -110,7 +110,7 @@
     }
    ```
    > Output: 4 3 2 1
-   #### for ####
+   #### For ####
    Die for Schleife verwenden wir, wenn die Anzahl der Durchläufe bekannt ist. D.h. es ist eine Zähler-gesteuerte Schleife.
    ```C
    for (int i=1; i<=3; i++)
@@ -118,7 +118,7 @@
        printf("%d\n", i);
    }
    ```
-   #### while ####
+   #### While ####
    Die while Schleife läuft solange wie die Bedingung im Schleifenkopf wahr ist, und bricht dann ab, wenn diese falsch wird. Um Zählvariablen, in unserem Beispiel i, muß man sich selber kümmern.
    ```C
    int i=0;
@@ -127,7 +127,7 @@
       i++;
    }
    ```
-   #### do while ####
+   #### Do while ####
    Während die While-Schleife ausgeführt wird, solange die Bedingung gegeben ist, wird die Do-While-Schleife zunächst einmal ausgeführt und erst anschließend geprüft, ob die Bedingung zutrifft. 
    ```C
    int i = 0;  
@@ -136,6 +136,18 @@
         printf_s("\n%d",i++);  
     } while (i < 3);  
    ```
+   #### Rekursion ####
+   Das ist ein Beispiel für Rekursion. Es wird in einer Funktion die gleiche Funktion nochmals aufgerufen.
+   ```C
+   int fakultaet(int x) {
+      if(x > 1) {
+           return x * fakultaet(x-1);
+       }else {
+           return 1;
+       }
+   }
+   ```
+   
 ## 5. Array ##
   #### Print Array ####
   Das ist eine Funktion um ein eindimensionales Array au zu geben.
