@@ -177,7 +177,7 @@
    }
   ```
    ```C
-  printArray(8, 8, arr);
+  print_2D_Array(8, 8, arr);
   ```
   #### 2D Array   ####
   #### Bubbelsort   ####
