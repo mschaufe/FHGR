@@ -67,6 +67,7 @@
 ## 3. Scanf ##
    #### Allgemein ####
    #### Eingabeprüfung ####
+   Mit diesem Code wird eine Zahl eingelesen und geprüft, ob sie den Vorgaben entspricht.<br><br>
    Neue Funktion `clean_stdin()` erstellen
    ``` C
    int clean_stdin()
@@ -161,6 +162,22 @@
   ```
   ```C
   printArray(arr, 5);
+  ```
+  Mit dieser Funktion kannst du ein 2D Array ausgeben
+  ```C
+  /* Function to print an 2D array */
+   void print_2D_Array(int x, int y, int arr[x][y])
+   {
+       for (int i=0; i < x; i++) {
+           for (int j = 0; j < y; j++) {
+               printf("%d \t", arr[i][j]);
+           }
+           printf("\n");
+       }
+   }
+  ```
+   ```C
+  printArray(8, 8, arr);
   ```
   #### 2D Array   ####
   #### Bubbelsort   ####
