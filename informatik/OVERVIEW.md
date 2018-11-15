@@ -97,6 +97,19 @@
    ```
    > Wartet auf ein Enter
 ## 4. Schleifen ##
+   #### Increment / Decrement ####
+   `++i` Erhöht den Wert um eins und gibt den erhöhten Wert zurück.<br>
+   `i++` gibt den Wert i weiter und erhöht ihn anschliessend.
+   #### Static ####
+   Variable wird nicht jedes Mal neu initialisiert.
+   ```C
+   static int i = 5;
+    if (--i){           /* Bedeutet so viel wie if(--i != false) - wird bei 0 beendet. */
+        printf("%d ", i);
+        main(10);
+    }
+   ```
+   > Output: 4 3 2 1
    #### for ####
    Die for Schleife verwenden wir, wenn die Anzahl der Durchläufe bekannt ist. D.h. es ist eine Zähler-gesteuerte Schleife.
    ```C
