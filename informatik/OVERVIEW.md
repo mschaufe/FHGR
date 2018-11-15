@@ -104,7 +104,7 @@
    Variable wird nicht jedes Mal neu initialisiert.
    ```C
    static int i = 5;
-    if (--i){           /* Bedeutet so viel wie if(--i != false) - wird bei 0 beendet. */
+    if (--i){           /* if(--i != false) - wird bei 0 beendet. */
         printf("%d ", i);
         main(10);
     }
@@ -137,6 +137,19 @@
     } while (i < 3);  
    ```
 ## 5. Array ##
+  #### Print Array ####
+  Das ist eine Funktion um ein eindimensionales Array au zu geben.
+  ```C
+  /* Function to print an array */
+   void printArray(int arr[], int size){
+       for (int i=0; i < size; i++) {
+           printf("%d ", arr[i]);
+           }
+       }
+  ```
+  ```C
+  printArray(arr, 5);
+  ```
   #### 2D Array   ####
   #### Bubbelsort   ####
   #### Selectionsort   ####
