@@ -179,9 +179,41 @@
    ```C
   print_2D_Array(8, 8, arr);
   ```
-  ### 2D Array   ###
-  ### Bubbelsort   ###
-  ### Selectionsort   ###
+  ### 2D Array ###
+  ### Selectionsort ###
+   ``` C
+      void selectionSort (int arr[], int n) {
+          int j, i, min, pos;
+
+          for (j=0; j<n-1; j++){
+              min = arr[j];
+              pos = j;
+              for (i = j; i < n; i++) {
+                  if (arr[i]<min){
+                      min = arr[i];
+                      pos = i;
+                  }
+              }
+              arr[pos] = arr[j];
+              arr[j] = min;
+          }
+      }
+   ```
+  ### Bubbelsort ###
+  ``` C
+  void bubbleSort(int arr[], int n)
+   {
+       int i,j;
+
+       for (i=n; i>0; i--){
+           for (j=0; i>(j+1); j++ ) {
+               if (arr[j] > arr[j+1]) {
+                   mach_switch(&arr[j], &arr[j+1]);
+               }
+           }
+       }
+   }
+  ```
   ## Strings ##
   Damit wir im Umgang mit Strings wissen, wo das Ende in der Zeichenkette ist, werden Strings in C mit dem ASCII-Zeichen 0 abgeschlossen: `\0` . D.h. im Hauptspeicher steht nicht nur `Hallo`, sondern `Hallo\0`. Bei der Initialisierung ohne die geschweiften Klammern und bei den String-Funktionen wird das Ende-Zeichen automatisch gesetzt. <br> Das Ende-Zeichen dient nur zur Markierung, deshalb ist es bei der Ausgabe auch nicht zu sehen. Wir sprechen hierbei von sogenannten nullterminierten Strings.
   ```C
