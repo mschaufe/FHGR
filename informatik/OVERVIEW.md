@@ -214,7 +214,7 @@
        }
    }
   ```
-  ## Strings ##
+  ## 6. Strings ##
   Damit wir im Umgang mit Strings wissen, wo das Ende in der Zeichenkette ist, werden Strings in C mit dem ASCII-Zeichen 0 abgeschlossen: `\0` . D.h. im Hauptspeicher steht nicht nur `Hallo`, sondern `Hallo\0`. Bei der Initialisierung ohne die geschweiften Klammern und bei den String-Funktionen wird das Ende-Zeichen automatisch gesetzt. <br> Das Ende-Zeichen dient nur zur Markierung, deshalb ist es bei der Ausgabe auch nicht zu sehen. Wir sprechen hierbei von sogenannten nullterminierten Strings.
   ```C
   char text[6] = "Hallo";
@@ -225,4 +225,22 @@
   printf("Denke daran, %s\n", string);
   ```
   > Denke daran, die schoenen Dinge im Leben sind umsonst.
+
+## 7. Funktionen ##
+  ### Call by Value ###
+  In vielen Programmiersprachen werden im Normalfall Parameter an Funktionen mithilfe einer Kopie übergeben. Das wird als `call-by-value` bezeichnet. Das bedeutet, dass innerhalb der aufgerufenen Funktion mit der Kopie gearbeitet wird und sich Änderungen nicht auf den ursprünglichen Wert auswirken.
+### Call by Reference ###
+Bei einer Übergabe als Referenz wirken sich Änderungen an den Parametern auf die Ursprünglichen Werte aus. In der Praxis wird das zum Beispiel verwendet, wenn eine Funktion mehrere Rückgabewerte hätte. Nachfolgend ein Beispiel für eine Funktion, die `call-by-reference` nutzt:
+```C
+   void increment(int  *var)
+   {
+       *var = *var+1;
+   }
+```
+Im Main:
+```C
+increment(&num);
+```
+
+
 
