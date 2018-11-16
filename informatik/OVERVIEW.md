@@ -229,7 +229,7 @@
    ```C
    char sting[100];
    printf("Geben Sie einen String ein: ");
-   scanf("%99s", &stingasdlija[0]);
+   scanf("%99s", &sting[0]);
    printf("Ihre Eingabe: %s\n",sting);
    ```
    ### String Library <string.h> ###
