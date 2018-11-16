@@ -182,5 +182,15 @@
   ### 2D Array   ###
   ### Bubbelsort   ###
   ### Selectionsort   ###
-  
+  ## Strings ##
+  Damit wir im Umgang mit Strings wissen, wo das Ende in der Zeichenkette ist, werden Strings in C mit dem ASCII-Zeichen 0 abgeschlossen: `\0` . D.h. im Hauptspeicher steht nicht nur `Hallo`, sondern `Hallo\0`. Bei der Initialisierung ohne die geschweiften Klammern und bei den String-Funktionen wird das Ende-Zeichen automatisch gesetzt. <br> Das Ende-Zeichen dient nur zur Markierung, deshalb ist es bei der Ausgabe auch nicht zu sehen. Wir sprechen hierbei von sogenannten nullterminierten Strings.
+  ```C
+  char text[6] = "Hallo";
+  ```
+  In der Anwendung:
+  ```C
+  char string[] = "die schoenen Dinge im Leben sind umsonst.";
+  printf("Denke daran, %s\n", string);
+  ```
+  > Denke daran, die schoenen Dinge im Leben sind umsonst.
 
