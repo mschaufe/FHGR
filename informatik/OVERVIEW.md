@@ -225,7 +225,22 @@
   printf("Denke daran, %s\n", string);
   ```
   > Denke daran, die schoenen Dinge im Leben sind umsonst.
-
+   ### String einlesen ###
+   ```C
+   char sting[100];
+   printf("Geben Sie einen String ein: ");
+   scanf("%99s", &stingasdlija[0]);
+   printf("Ihre Eingabe: %s\n",sting);
+   ```
+   ### String Library <string.h> ###
+   `include <string.h>`<br>
+   #### strcmp ####
+   Lexikographischer Verleich zweier Stings. Das Ergebnis ist 0; wenn die beiden Strings identisch sind, kleiner 0, wenn der erste String lexikographisch kleiner ist und grösser 0, wenn der erste String lexikographisch grösser ist.
+   ```C
+   if(strcmp(sting,"string")==0){
+        printf("sind identisch");
+    }
+   ```
 ## 7. Funktionen ##
   ### Call by Value ###
   In vielen Programmiersprachen werden im Normalfall Parameter an Funktionen mithilfe einer Kopie übergeben. Das wird als `call-by-value` bezeichnet. Das bedeutet, dass innerhalb der aufgerufenen Funktion mit der Kopie gearbeitet wird und sich Änderungen nicht auf den ursprünglichen Wert auswirken.
