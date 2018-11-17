@@ -2,21 +2,21 @@
 clear all; clc; format compact; format short g; syms x;
 
 %  Parameter :
-temp_start_element1=0;
-temp_start_element2=100;
+temp_start_element1=20;
+temp_start_element2=20;
 
 % WeitereParameter :
 x_0=-400; x_E=2000; N=20000; lw=3; fs=12; fig=1;
 
 
-a_element1=1.2*10^-5;
-a_element2=2.38*10^-5;
-l_element1=25.4;
-l_element2=25.451;
+a_element1=1.1*10^-5;
+a_element2=1.9*10^-5;
+l_element1=29.97;
+l_element2=30;
 
 % Funktionen :
 f=@(x)((x+temp_start_element1)*a_element1*l_element1)+l_element1;
-g=@(x)((x-temp_start_element2)*a_element2*l_element2)+l_element2;
+g=@(x)((x+temp_start_element2)*a_element2*l_element2)+l_element2;
 
 % Daten : 
 x_data=linspace(x_0, x_E, N);
