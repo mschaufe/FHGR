@@ -200,6 +200,14 @@
       }
    ```
   ### Bubbelsort ###
+  ```C
+  void mach_switch(int *p1, int *p2){
+       int temp= *p1;
+       *p1 = *p2;
+       *p2 = temp;
+
+   }
+  ```
   ``` C
   void bubbleSort(int arr[], int n)
    {
