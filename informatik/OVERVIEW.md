@@ -249,6 +249,25 @@
         printf("sind identisch");
     }
    ```
+   #### strncpy ####
+   Mit `strncpy` kopiert man n Zeichen von src nach dest. Wichtig: Ist die Länge des zu kopierenden Strings kleiner als die Länge des Quell-Strings, wird das Ende-Zeichen im Ziel-String nicht gesetzt. Dies muss also manuell gesetzt werden.
+   ```C
+   char * strncpy(char *dest, char *src, int n);
+   ```
+   ```C
+   char textA[10] = "123456";
+   char textB[10];
+
+   // kopiere in textB 3 Zeichen von textA
+   strncpy(textB, textA, 3);
+
+   // Ende-Zeichen setzen
+   textB[3] = '\0';
+
+   printf("Text A: %s\nText B: %s\n\n", textA, textB);
+   ```
+   >Text A: 123456<br>
+   >Text B: 123
 ## 7. Funktionen ##
   ### Call by Value ###
   In vielen Programmiersprachen werden im Normalfall Parameter an Funktionen mithilfe einer Kopie übergeben. Das wird als `call-by-value` bezeichnet. Das bedeutet, dass innerhalb der aufgerufenen Funktion mit der Kopie gearbeitet wird und sich Änderungen nicht auf den ursprünglichen Wert auswirken.
