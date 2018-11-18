@@ -24,7 +24,7 @@
        * Marc Schaufelberger *
        * HTW CHUR *
        * 00. XXX 2018 *
-       * Projekt
+       * Projektn *
       ******************************/
 
 
