@@ -201,7 +201,7 @@
    ```
   ### Bubbelsort ###
   ```C
-  void mach_switch(int *p1, int *p2){
+  void swop(int *p1, int *p2){
        int temp= *p1;
        *p1 = *p2;
        *p2 = temp;
@@ -216,7 +216,7 @@
        for (i=n; i>0; i--){
            for (j=0; i>(j+1); j++ ) {
                if (arr[j] > arr[j+1]) {
-                   mach_switch(&arr[j], &arr[j+1]);
+                   swop(&arr[j], &arr[j+1]);
                }
            }
        }
