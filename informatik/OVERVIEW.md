@@ -241,7 +241,7 @@
    printf("Ihre Eingabe: %s\n",sting);
    ```
    ### String Library <string.h> ###
-   `include <string.h>`<br>
+   `#include <string.h>`<br>
    #### strcmp ####
    Lexikographischer Verleich zweier Stings. Das Ergebnis ist 0; wenn die beiden Strings identisch sind, kleiner 0, wenn der erste String lexikographisch kleiner ist und grösser 0, wenn der erste String lexikographisch grösser ist.
    ```C
