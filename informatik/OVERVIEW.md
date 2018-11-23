@@ -26,9 +26,9 @@
        * 00. XXX 2018 *
        * Projekt *
       ******************************/
+## 2. Operatoren ##
 
-
-## 2. Printf ##
+## 3. Printf ##
    ### Formatelemente ###
    ``` C
    printf("Integer: %d\n", 42);
@@ -64,7 +64,7 @@
    \0 ist die Endmarkierung einer Zeichenkette
    ```
 
-## 3. Scanf ##
+## 4. Scanf ##
    ### Allgemein ###
    ### Eingabeprüfung ###
    Mit diesem Code wird eine Zahl eingelesen und geprüft, ob sie den Vorgaben entspricht.<br><br>
@@ -97,7 +97,7 @@
    return EXIT_SUCCESS;
    ```
    > Wartet auf ein Enter
-## 4. Schleifen ##
+## 5. Schleifen ##
    ### Increment / Decrement ###
    `++i` Erhöht den Wert um eins und gibt den erhöhten Wert zurück.<br>
    `i++` gibt den Wert i weiter und erhöht ihn anschliessend.
@@ -149,7 +149,7 @@
    }
    ```
    
-## 5. Array ##
+## 6. Array ##
   ### Print Array ###
   Das ist eine Funktion um ein eindimensionales Array au zu geben.
   ```C
@@ -222,7 +222,7 @@
        }
    }
   ```
-  ## 6. Pointer ##
+  ## 7. Pointer ##
   ### Difinition ###
   Die Definition eines Zeigers besteht aus dem Datentyp des Zeigers und dem gewünschten Zeigernamen.
   ```C
@@ -241,7 +241,7 @@
        printf("Die Variable ist: %d und der Ort im Speicher ist: %p", wert, *zeiger);
   ```
   
-  ## 7. Strings ##
+  ## 8. Strings ##
   Damit wir im Umgang mit Strings wissen, wo das Ende in der Zeichenkette ist, werden Strings in C mit dem ASCII-Zeichen 0 abgeschlossen: `\0` . D.h. im Hauptspeicher steht nicht nur `Hallo`, sondern `Hallo\0`. Bei der Initialisierung ohne die geschweiften Klammern und bei den String-Funktionen wird das Ende-Zeichen automatisch gesetzt. <br> Das Ende-Zeichen dient nur zur Markierung, deshalb ist es bei der Ausgabe auch nicht zu sehen. Wir sprechen hierbei von sogenannten nullterminierten Strings.
   ```C
   char text[6] = "Hallo";
@@ -287,7 +287,7 @@
    ```
    >Text A: 123456<br>
    >Text B: 123
-## 8. Funktionen ##
+## 9. Funktionen ##
   ### Call by Value ###
   In vielen Programmiersprachen werden im Normalfall Parameter an Funktionen mithilfe einer Kopie übergeben. Das wird als `call-by-value` bezeichnet. Das bedeutet, dass innerhalb der aufgerufenen Funktion mit der Kopie gearbeitet wird und sich Änderungen nicht auf den ursprünglichen Wert auswirken.
 ### Call by Reference ###
