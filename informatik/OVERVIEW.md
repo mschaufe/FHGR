@@ -265,6 +265,7 @@
   ```
   > Denke daran, die schoenen Dinge im Leben sind umsonst.
    ### String einlesen ###
+   Textinput:
    ```C
    char string[100];
    printf("Geben Sie einen String ein: ");
