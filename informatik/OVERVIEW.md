@@ -266,17 +266,17 @@
   > Denke daran, die schoenen Dinge im Leben sind umsonst.
    ### String einlesen ###
    ```C
-   char sting[100];
+   char string[100];
    printf("Geben Sie einen String ein: ");
-   scanf("%99s", &sting[0]);
-   printf("Ihre Eingabe: %s\n",sting);
+   scanf("%99s", &string[0]);
+   printf("Ihre Eingabe: %s\n",string);
    ```
    ### String Library <string.h> ###
    `#include <string.h>`<br>
    #### strcmp ####
-   Lexikographischer Verleich zweier Stings. Das Ergebnis ist 0; wenn die beiden Strings identisch sind, kleiner 0, wenn der erste String lexikographisch kleiner ist und grösser 0, wenn der erste String lexikographisch grösser ist.
+   Lexikographischer Verleich zweier Strings. Das Ergebnis ist 0; wenn die beiden Strings identisch sind, kleiner 0, wenn der erste String lexikographisch kleiner ist und grösser 0, wenn der erste String lexikographisch grösser ist.
    ```C
-   if(strcmp(sting,"string")==0){
+   if(strcmp(string,"string")==0){
         printf("sind identisch");
     }
    ```
