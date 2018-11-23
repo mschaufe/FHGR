@@ -250,7 +250,7 @@
     }
    ```
    #### strncpy ####
-   Mit `strncpy` kopiert man n Zeichen von src nach dest. Wichtig: Ist die Länge des zu kopierenden Strings kleiner als die Länge des Quell-Strings, wird das Ende-Zeichen im Ziel-String nicht gesetzt. Dies muss also manuell gesetzt werden.
+   Mit `strncpy` kopiert man n Zeichen von `src` nach `dest`. Wichtig: Ist die Länge des zu kopierenden Strings kleiner als die Länge des Quell-Strings, wird das Ende-Zeichen im Ziel-String nicht gesetzt. Dies muss also manuell gesetzt werden.
    ```C
    char * strncpy(char *dest, char *src, int n);
    ```
