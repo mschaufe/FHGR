@@ -27,6 +27,16 @@
        * Projekt *
       ******************************/
 ## 2. Operatoren ##
+### Zuweisungsoperatoren ###
+Der Zuweisungsoperator `operand_A` = `operand_B` weist dem linken Operanden, welcher eine Variable sein muß, den Wert des rechten Operanden zu.
+| Operator | Example | Same as |
+|----------|---------|---------|
+| =        | a = b   | a = b   |
+| +=       | a += b  | a = a+b |
+| -=       | a -= b  | a = a-b |
+| *=       | a *= b  | a = a*b |
+| /=       | a /= b  | a = a/b |
+| %=       | a %= b  | a = a%b |
 
 ## 3. Printf ##
    ### Formatelemente ###
