@@ -238,10 +238,11 @@
   Die Definition eines Zeigers besteht aus dem Datentyp des Zeigers und dem gewünschten Zeigernamen.
   ```C
   int* zeiger1;           /* kann eine Adresse aufnehmen, die auf einen Wert vom Typ Integer zeigt */
-   int *zeiger2;           /* das Leerzeichen kann sich vor oder nach dem Stern befinden */
-   int * zeiger3;          /* ebenfalls möglich */
-   int *zeiger4, *zeiger5; /* Definition von zwei Zeigern */
-   int *zeiger6, ganzzahl; /* Definition eines Zeigers und einer Variablen vom Typ Integer */
+  int *zeiger2;           /* das Leerzeichen kann sich vor oder nach dem Stern befinden */
+  int * zeiger3;          /* ebenfalls möglich */
+  int *zeiger4, *zeiger5; /* Definition von zwei Zeigern */
+  int *zeiger6, ganzzahl; /* Definition eines Zeigers und einer Variablen vom Typ Integer */
+  int **zeiger;           /* Es ist möglich einen Pointer auf einen Pointer zu definieren!*/
   ```
   ### Zuweisung ###
   Die Zuweisung einer Adresse an einen Zeiger erfolgt mithilfe des Adressoperators, eines Arrays, eines weiteren Zeigers oder des Wertes von `NULL`.
