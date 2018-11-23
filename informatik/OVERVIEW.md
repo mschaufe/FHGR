@@ -222,7 +222,26 @@
        }
    }
   ```
-  ## 6. Strings ##
+  ## 6. Pointer ##
+  ### Difinition ###
+  Die Definition eines Zeigers besteht aus dem Datentyp des Zeigers und dem gewünschten Zeigernamen.
+  ```C
+  int* zeiger1;           /* kann eine Adresse aufnehmen, die auf einen Wert vom Typ Integer zeigt */
+   int *zeiger2;           /* das Leerzeichen kann sich vor oder nach dem Stern befinden */
+   int * zeiger3;          /* ebenfalls möglich */
+   int *zeiger4, *zeiger5; /* Definition von zwei Zeigern */
+   int *zeiger6, ganzzahl; /* Definition eines Zeigers und einer Variablen vom Typ Integer */
+  ```
+  ### Zuweisung ###
+  Die Zuweisung einer Adresse an einen Zeiger erfolgt mithilfe des Adressoperators, eines Arrays, eines weiteren Zeigers oder des Wertes von `NULL`.
+  ```C
+      int * zeiger, wert;
+       wert = 5;
+       zeiger = &wert;
+       printf("Die Variable ist: %d und der Ort im Speicher ist: %p", wert, *zeiger);
+  ```
+  
+  ## 7. Strings ##
   Damit wir im Umgang mit Strings wissen, wo das Ende in der Zeichenkette ist, werden Strings in C mit dem ASCII-Zeichen 0 abgeschlossen: `\0` . D.h. im Hauptspeicher steht nicht nur `Hallo`, sondern `Hallo\0`. Bei der Initialisierung ohne die geschweiften Klammern und bei den String-Funktionen wird das Ende-Zeichen automatisch gesetzt. <br> Das Ende-Zeichen dient nur zur Markierung, deshalb ist es bei der Ausgabe auch nicht zu sehen. Wir sprechen hierbei von sogenannten nullterminierten Strings.
   ```C
   char text[6] = "Hallo";
@@ -268,7 +287,7 @@
    ```
    >Text A: 123456<br>
    >Text B: 123
-## 7. Funktionen ##
+## 8. Funktionen ##
   ### Call by Value ###
   In vielen Programmiersprachen werden im Normalfall Parameter an Funktionen mithilfe einer Kopie übergeben. Das wird als `call-by-value` bezeichnet. Das bedeutet, dass innerhalb der aufgerufenen Funktion mit der Kopie gearbeitet wird und sich Änderungen nicht auf den ursprünglichen Wert auswirken.
 ### Call by Reference ###
