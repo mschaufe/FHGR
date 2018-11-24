@@ -293,11 +293,11 @@
    ```C
    void printString(char* str) {
     char c = *str;
-    while(c) {
-    printf("%c", c);
-   str++;
-   c = *str;
-    }
+      while(c) {
+      printf("%c", c);
+         str++;
+         c = *str;
+      }
    }
    char str[] ="hallo world\n";
    printString(&str[0]);
@@ -305,9 +305,9 @@
    Kurzversion
    ```C
    void printString(char* str) {
-    while(*str) {
-    printf("%c",*str++);
-    }
+      while(*str) {
+         printf("%c",*str++);
+      }
    }
    ```
    ### String Library <string.h> ###
