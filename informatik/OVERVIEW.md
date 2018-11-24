@@ -275,7 +275,7 @@
    ### String Library <string.h> ###
    `#include <string.h>`<br>
    #### strcmp ####
-   Lexikographischer Verleich zweier Strings. Das Ergebnis ist 0; wenn die beiden Strings identisch sind, kleiner 0, wenn der erste String lexikographisch kleiner ist und grösser 0, wenn der erste String lexikographisch grösser ist.
+   Lexikographischer Vergleich zweier Strings. Das Ergebnis ist 0; wenn die beiden Strings identisch sind, kleiner 0, wenn der erste String lexikographisch kleiner ist und grösser 0, wenn der erste String lexikographisch grösser ist.
    ```C
    if(strcmp(string,"string")==0){
         printf("sind identisch");
