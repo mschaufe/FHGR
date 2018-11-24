@@ -234,8 +234,8 @@
    }
   ```
   ## 7. Pointer ##
-  ### Difinition ###
-  Die Definition eines Zeigers besteht aus dem Datentyp des Zeigers und dem gewünschten Zeigernamen.
+  ### Zeiger ###
+  Die Definition eines Zeigers besteht aus dem Datentyp des Zeigers und dem gewünschten Zeigernamen. Zeiger werden bei der Deklaration durch ein `*` gekennzeichnet, `int* u` ist ein Zeiger auf ein `int`, `double* f` ein Zeiger auf ein `double` etc.
   ```C
   int* zeiger1;           /* kann eine Adresse aufnehmen, die auf einen Wert vom Typ Integer zeigt */
   int *zeiger2;           /* das Leerzeichen kann sich vor oder nach dem Stern befinden */
@@ -244,6 +244,22 @@
   int *zeiger6, ganzzahl; /* Definition eines Zeigers und einer Variablen vom Typ Integer */
   int **zeiger;           /* Es ist möglich einen Pointer auf einen Pointer zu definieren!*/
   ```
+  ### Adressen ###
+  Der Adress-Operator `&` liefert die Adresse einer Variablen (nicht zu verwechseln mit Bit-AND!). Das Codefragment zeigt drei Variablen i, l, p vom Typ int, long und Zeiger auf int.
+  ```C
+  int i = 5;
+  long l = 2;
+  int* p = &i;
+  ```
+  
+   | var | adress       | value        |
+   |-----|--------------|--------------|
+   | i:  | <b>0xFF00<b> | 5            |
+   | l:  | 0xFF04       | 2            |
+   | p:  | 0xFF10       | <b>0xFF00<b> |
+   
+   Die Variable `i` mit dem Wert 5 hat die (willkürliche) Speicheradresse `0xFF00`. Dem Zeiger `p` wurde die Adresse von `i` zugewiesen. Er hat den Wert `0xFF00`.
+   
   ### Zuweisung ###
   Die Zuweisung einer Adresse an einen Zeiger erfolgt mithilfe des Adressoperators, eines Arrays, eines weiteren Zeigers oder des Wertes von `NULL`.
   ```C
@@ -265,12 +281,34 @@
   ```
   > Denke daran, die schoenen Dinge im Leben sind umsonst.
    ### String einlesen ###
-   Textinput:
+   Texteingabe:
    ```C
    char string[100];
    printf("Geben Sie einen String ein: ");
    scanf("%99s", &string[0]);
    printf("Ihre Eingabe: %s\n",string);
+   ```
+   ### String ausgeben ###
+   Verständlichere Variante
+   ```C
+   void printString(char* str) {
+    char c = *str;
+    while(c) {
+    printf("%c", c);
+   str++;
+   c = *str;
+    }
+   }
+   char str[] ="hallo world\n";
+   printString(&str[0]);
+   ```
+   Kurzversion
+   ```C
+   void printString(char* str) {
+    while(*str) {
+    printf("%c",*str++);
+    }
+   }
    ```
    ### String Library <string.h> ###
    `#include <string.h>`<br>
