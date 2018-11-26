@@ -353,6 +353,22 @@ Im Main:
 ```C
 increment(&num);
 ```
+## 10. Struct ##
+
+   Um einen neuen Datentyp zu erstellen, geben Sie zuerst das Schlüsselwort `struct` an. Hinter struct folgt der Name des neuen Datentyps. Im folgenden Beispiel heisst der neue Datentyp also adresse. Hinter dem Namen werden in geschweiften Klammern nun eine Reihe von Variablen definiert, aus denen der neue Datentyp bestehen soll. Im Code-Beispiel soll also eine Adresse Daten zu Anrede, Vorname, Nachname, Strasse, Hausnummer, Postleitzahl, Ort und Land speichern können. Demnach sind acht Variablen innerhalb der Struktur definiert, die alle den jeweils optimalen Datentyp besitzen, um die gewünschten Daten speichern zu können.
+   ```C
+   struct adresse 
+   { 
+     std::string Anrede; 
+     std::string Vorname; 
+     std::string Nachname; 
+     std::string Strasse; 
+     int Hausnummer; 
+     int Postleitzahl; 
+     std::string Ort; 
+     std::string Land; 
+   }; 
+   ```
 
 
 
