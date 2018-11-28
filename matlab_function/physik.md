@@ -4,6 +4,7 @@
   ### Temperatur
   ### Ideales Gas ###
   In einem idealen Gas fliegen die Teilchen ohne gegenseitige Wechselwirkung und ohne Eigenvolumen umher. Stösse erfolgen vollkommen elastisch.
+  
 | Bezeichnung        	| Formel          	| Parameter                                                                                             	| Matlab 	|
 |--------------------	|-----------------	|-------------------------------------------------------------------------------------------------------	|--------	|
 | Zustandsgleichung  	| p*V = NkT = nRT 	| p Druck<br> V Volumen<br> N Teilchen in V<br>  R universelle Gaskonstante<br>  T Temperatur in Kelvin 	|        	|
