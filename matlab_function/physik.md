@@ -5,7 +5,9 @@
   ### Ideales Gas ###
   In einem idealen Gas fliegen die Teilchen ohne gegenseitige Wechselwirkung und ohne Eigenvolumen umher. Stösse erfolgen vollkommen elastisch.
   
-  Zustandsgleichung <b>pV=NkT=nRT<b>
+  Zustandsgleichung: `pV=NkT=nRT`
+  
+  Bolzmann-Konstante: <b>k=R/Na<b>
   > p Druck <br>V Volumen<br>N Teilchen in V<br>R universelle Gaskonstante
   
   ### Gesetze speziell für konstane Gasmengen
