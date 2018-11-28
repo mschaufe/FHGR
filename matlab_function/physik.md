@@ -7,7 +7,7 @@
   
   Zustandsgleichung: `pV=NkT=nRT`
   
-  Bolzmann-Konstante: <b>k=R/Na<b>
+  Bolzmann-Konstante: `k=R/Na`
   > p Druck <br>V Volumen<br>N Teilchen in V<br>R universelle Gaskonstante
   
   ### Gesetze speziell für konstane Gasmengen
