@@ -7,21 +7,14 @@ konstanten;
 % --------------------------------------------------------
 k=273.15;
 
-CLuft=29.1
+Cpwasserstoff = 28.9
+Cpsauerstoff = 29.3
+dT=k+20
 
-p=101325
+Q=Cpwasserstoff*2.00*dT+Cpsauerstoff*1*dT
 
-V=15*15*10
+Q2=(5/2)*3*R_G*dT
 
-aT=k+10
-eT=k+20
+T=(2*(561000+18300))/(12*2*R_G)
 
-dT=10
-
-n=(p*V)/(R_G*eT)
-
-f=5
-
-C=((f/2)+1)*R_G
-
-Q=C*n*dT
+(2*T)/(3*dT)

@@ -56,7 +56,6 @@ void quicksort (int arr[],int a, int n){
             //printf("\n- Ueber dem Pivot %d sind %d Elemente und der Start ist bei %d\n",pivot, numbers_over_pivot, p);
             quicksort(arr, p, numbers_over_pivot+p);
         }
-
     }
 }
 
