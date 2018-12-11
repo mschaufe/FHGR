@@ -353,6 +353,24 @@ Im Main:
 ```C
 increment(&num);
 ```
+## 10. Struct ##
+   ### Datentyp struct ###
+   Um einen neuen Datentyp zu erstellen, geben Sie zuerst das Schlüsselwort `struct` an. Hinter struct folgt der Name des neuen Datentyps. Im folgenden Beispiel heisst der neue Datentyp also adresse. 
+   ```C
+   struct Person
+   {
+       char name[50];
+       int citNo;
+       float salary;
+   };
+   typedef struct person
+   {
+      int age;
+      float weight;
+   };
+   ```
+   > Mit `typedef` kann man neue Datentypnamen definieren. Danach muss man `struct` nicht eingaben.
 
-
+   ### malloc ###
+   
 
