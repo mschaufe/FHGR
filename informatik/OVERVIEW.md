@@ -23,7 +23,7 @@
       /*****************************
        * Marc Schaufelberger *
        * HTW CHUR *
-       * 00. XXX 2018 *
+       * 00. XXX 2019 *
        * Projekt *
       ******************************/
 ## 2. Operatoren ##
