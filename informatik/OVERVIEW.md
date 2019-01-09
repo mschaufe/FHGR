@@ -399,5 +399,15 @@ increment(&num);
     return a;                            //In a steht jetzt der größte gemeinsame Teiler von a und b.
 }
    ```
+   ### Rest (Modulo) ###
+   Der Rest-Operator liefert den Divisionsrest. Die Operanden des Rest-Operators müssen vom ganzzahligen Typ sein.
+   
+   ```
+   int a = 5, b = 2;
+   int ergebnis;
+   ergebnis = a % b; // Ergebnis hat den Wert 1
+   ```
+
+
    
 
