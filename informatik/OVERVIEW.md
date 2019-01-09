@@ -376,7 +376,8 @@ increment(&num);
    ## 11. Zusätzliches ##
    
    ### GGT ###
-   
+   a und b sind die beiden Zahlen von denen man den größten Teiler haben möchte.
+
    ```
    int Euklid(int a, int b)
 {
