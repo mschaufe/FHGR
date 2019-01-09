@@ -373,4 +373,30 @@ increment(&num);
 
    ### malloc ###
    
+   ## 11. Zusätzliches ##
+   
+   ### GGT ###
+   
+   ```
+   int Euklid(int a, int b)
+{
+    if (a == 0)                          //Wenn a=0 ist b der größte gemeinsame Teiler laut Definition
+    {
+    	return b;
+    }
+    while(b != 0)                        //So lange wiederholen, wie b nicht 0 ist.
+    {
+    	if (a > b)
+    	{
+    		a = a - b;               //Wenn a größer als b, subtrahiere b von a.
+    	}
+        else
+    	{
+    		b = b - a;               //In jedem anderen Fall subtrahiere a von b.
+    	}
+    }
+    return a;                            //In a steht jetzt der größte gemeinsame Teiler von a und b.
+}
+   ```
+   
 
