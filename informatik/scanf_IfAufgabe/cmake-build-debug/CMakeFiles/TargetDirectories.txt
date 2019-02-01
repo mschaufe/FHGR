@@ -1,3 +1,0 @@
-/Users/ms/Documents/GitHub/HTW/informatik/scanf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/ms/Documents/GitHub/HTW/informatik/scanf/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ms/Documents/GitHub/HTW/informatik/scanf/cmake-build-debug/CMakeFiles/scanf.dir

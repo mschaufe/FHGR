@@ -1,10 +1,11 @@
+                    
 % MATLAB initialisieren:
 clear all; clc; format compact; format long;
 
 % Paramter:
     x_0=-1; % erster X Wert
     x_E=1; % letzter X Wert
-    n=4; % anzahl durchläufe
+    n=1; % anzahl durchläufe
     N=5; % anzahl Werte, die generiert werden
     fig=1; % Figur 1
     lw=4; % Liniendicke
@@ -26,3 +27,4 @@ plot(x_data,y_data,'-','linewidth',lw);
 xlabel('x'); ylabel('y');
 grid on;
 axis('image');
+                  
