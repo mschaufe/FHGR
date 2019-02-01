@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ms/Documents/GitHub/HTW/informatik/arrayGrundlagen_Aufgabe/main.c
+stdio.h
+-
+stdlib.h
+-
+

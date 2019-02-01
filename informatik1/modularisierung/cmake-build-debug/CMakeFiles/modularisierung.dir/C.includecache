@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ms/Documents/GitHub/HTW/informatik/modularisierung/division.h
+
+/Users/ms/Documents/GitHub/HTW/informatik/modularisierung/main.c
+stdio.h
+-
+division.h
+/Users/ms/Documents/GitHub/HTW/informatik/modularisierung/division.h
+
