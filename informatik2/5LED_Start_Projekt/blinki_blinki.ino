@@ -22,7 +22,7 @@ void setup() {
 void loop() {
     for(int i=8; i<13; i++) {
         digitalWrite(i, HIGH); // Turn the LED on
-        delay(40); // Wait for 200 milliseconds (1 second)
+        delay(40); // Wait
     }
     for(int i=12; i>7; i--) {
         digitalWrite(i, LOW); // Turn the LED off
