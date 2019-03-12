@@ -56,12 +56,12 @@ void loop() {
      time_tot=time_end-time_start;
      Serial.print(time_tot); Serial.println("\n"); 
      
-     if (time_tot > 800 && time_tot <1700){
+     if (time_tot > 800 && time_tot <1700){ // felt second
       status_led = 0;
       digitalWrite(LED_PIN, LOW);
      }
      
-     if (time_tot > 2899){
+     if (time_tot > 2199){ // felt three seconds
       status_led = 1;
      }
    }
