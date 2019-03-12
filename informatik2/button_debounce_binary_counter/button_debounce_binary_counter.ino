@@ -1,3 +1,10 @@
+  /*****************************
+   * Marc Schaufelberger *
+   * HTW CHUR *
+   * 11. MAR 2019 *
+   * Button debounce *
+  ******************************/
+
 #include <Bounce2.h> // https://www.arduinolibraries.info/libraries/bounce2
 
 
