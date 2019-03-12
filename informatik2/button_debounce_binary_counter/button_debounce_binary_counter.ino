@@ -17,6 +17,9 @@ Bounce debouncer = Bounce(); // Instantiate a Bounce object
  */
 void setup(void)
 {
+  Serial.begin(9600);
+
+  
   debouncer.attach(buttonPin,INPUT_PULLUP);
   debouncer.interval(25); // Use a debounce interval of 25 milliseconds
   
@@ -31,12 +34,23 @@ void setup(void)
  *  Constantly increase, display, and delay.
  */
 void loop(void){
+    int time_start, time_end, time_pressed = 0;
    debouncer.update(); // Update the Bounce instance
+   
    if ( debouncer.fell() ) {  // Call code if button transitions from HIGH to LOW
      dispBinary(count++);
+     Serial.print("Der Taster ist gedrueckt: ");
+     time_start = millis();
+     
    }
-
-  
+   debouncer.update(); // Update the Bounce instance
+   
+   if (debouncer.rose() == 1){
+      time_end = millis();
+      time_pressed = time_end - time_start;
+      Serial.print(time_pressed);Serial.print("\n");
+    }
+    
 }
 
 /*
