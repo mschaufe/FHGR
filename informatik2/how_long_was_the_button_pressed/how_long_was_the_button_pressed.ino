@@ -1,17 +1,16 @@
-// This example toggles the debug LED (pin 13) on or off
-// when a button on pin 2 is pressed.
-
-// Include the Bounce2 library found here :
-// https://github.com/thomasfredericks/Bounce2
+  /*****************************
+   * Marc Schaufelberger *
+   * HTW CHUR *
+   * 12. MAR 2019 *
+   * How long was the button pressed *
+  ******************************/
+  
 #include <Bounce2.h>
 
 #define BUTTON_PIN 13
 #define LED_PIN 12
 
 int ledState = LOW;
-
-
-
 
 Bounce debouncer = Bounce(); // Instantiate a Bounce object
 
