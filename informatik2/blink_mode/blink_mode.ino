@@ -13,6 +13,8 @@
 // Variables will change :
 int ledState = LOW;             // ledState used to set the LED
 
+int status_led = 1;
+
 Bounce debouncer = Bounce(); // Instantiate a Bounce object
  
 // Generally, you should use "unsigned long" for variables that hold time
@@ -39,8 +41,7 @@ void loop() {
    int time_start, time_end, time_tot = 0;
    
    if ( debouncer.fell() ) {  // Call code if button transitions from HIGH to LOW
-     ledState = !ledState; // Toggle LED state
-     digitalWrite(LED_PIN,ledState); // Apply new LED state
+
      time_start = millis();
      Serial.println("Taste ist gedrueckt"); 
 
@@ -55,8 +56,13 @@ void loop() {
      time_tot=time_end-time_start;
      Serial.print(time_tot); Serial.println("\n"); 
      
-     if (time_end <= 1000){
-      //code ...
+     if (time_tot > 800 && time_tot <1700){
+      status_led = 0;
+      digitalWrite(LED_PIN, LOW);
+     }
+     
+     if (time_tot > 2899){
+      status_led = 1;
      }
    }
 
@@ -65,13 +71,9 @@ void loop() {
    }
    
  
-  // check to see if it's time to blink the LED; that is, if the
-  // difference between the current time and last time you blinked
-  // the LED is bigger than the interval at which you want to
-  // blink the LED.
   unsigned long currentMillis = millis();
  
-  if (currentMillis - previousMillis >= interval) {
+  if (currentMillis - previousMillis >= interval && status_led == 1) {
     // save the last time you blinked the LED
     previousMillis = currentMillis;
  
