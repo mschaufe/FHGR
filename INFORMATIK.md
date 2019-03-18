@@ -1,4 +1,4 @@
-# Überblick C
+# Semester I
 
 ## 0. Datentypen ##
    ### Signed / Unsigned ###
@@ -373,7 +373,7 @@ increment(&num);
 
    ### malloc ###
    
-   ## 11. Zusätzliches ##
+   ## 11. Mathematik ##
    
    ### GGT ###
    a und b sind die beiden Zahlen von denen man den größten Teiler haben möchte.
@@ -407,5 +407,30 @@ increment(&num);
    int ergebnis;
    ergebnis = a % b; // Ergebnis hat den Wert 1
    ```
+   
+   # Semester II
 
+   ## 1. Bitshiftleft ##
 
+   In der Informatik ist ein bitweiser Operator ein Operator, der auf ein oder zwei Bitfolgen oder Binärzahlen auf der Ebene einzelner Bits angewendet wird.
+   
+   ```
+   int a = 5;      // binary: 0000000000000101
+   int b = a << 3; // binary: 0000000000101000, or 40 in decimal
+   ```
+   
+   ```
+Operation  Result
+---------  ------
+ 1 <<  0      1
+ 1 <<  1      2
+ 1 <<  2      4
+ 1 <<  3      8
+ ...
+ 1 <<  8    256
+ 1 <<  9    512
+ 1 << 10   1024
+ ...
+```
+ 
+   ## 2. ... ##
