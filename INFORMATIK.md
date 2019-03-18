@@ -433,4 +433,20 @@ Operation  Result
  ...
 ```
  
-   ## 2. ... ##
+   ## 2. Serial Monitor ##
+   Im `setup()` die Verbindung und geschwindigkeitsübertragung angeben.
+   ```
+      Serial.begin(9600);  
+   ```
+   Text ausgeben
+   ```
+      Serial.print("Text");  
+   ```
+   Variable ausgeben
+   ```
+      Serial.print(var);  
+   ```
+   Ausgebe mit Zeilenumbruch
+   ```
+      Serial.println("Sali!");  
+   ```
