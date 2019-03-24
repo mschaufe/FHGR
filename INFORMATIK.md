@@ -420,9 +420,9 @@ increment(&num);
    
    ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/Gscheiduino.png)
    
-   ### Datasheet ATmega328P-PU ###
+   ### Datasheet  ###
    
-   [Datasheet](https://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf)
+   [ATmega328P-PU](https://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf)
    
    ## 1. Bitshiftleft ##
 
