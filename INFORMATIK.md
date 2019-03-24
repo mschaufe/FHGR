@@ -420,6 +420,10 @@ increment(&num);
    
    ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/Gscheiduino.png)
    
+   ### Datasheet ATmega328P-PU ###
+   
+   [Datasheet](https://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf)
+   
    ## 1. Bitshiftleft ##
 
    In der Informatik ist ein bitweiser Operator ein Operator, der auf ein oder zwei Bitfolgen oder Binärzahlen auf der Ebene einzelner Bits angewendet wird.
