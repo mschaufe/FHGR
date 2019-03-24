@@ -409,7 +409,17 @@ increment(&num);
    ```
    
    # Semester II
+   
+   
 
+   ## 0. Gscheiduino ##
+   
+   Grundlegend ist er Gscheiduino absolut kompatibel zum Original (Arduino). Der Gscheiduino hat aber ein paar neue Features erhalten.
+   
+   ### Pinout ###
+   
+   ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/Gscheiduino.png)
+   
    ## 1. Bitshiftleft ##
 
    In der Informatik ist ein bitweiser Operator ein Operator, der auf ein oder zwei Bitfolgen oder Binärzahlen auf der Ebene einzelner Bits angewendet wird.
