@@ -520,9 +520,9 @@ Operation  Result
    ```
    ## 4. Timer ##
    
-   ### 8-bit Timer/Counter0 ###
+   ### 8-bit Timer/Counter0
    
-   ### 16-bit Timer/Counter1 ###
+   ### 16-bit Timer/Counter1
    
 
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
