@@ -482,7 +482,7 @@ Operation  Result
    Die Syntax ist wie folgt aufgebaut: `analogWrite(pin, value)`. Als erstes ist der Pin auf den geschrieben werden soll als Integer. Achtung! Auf den meisten Arduino-Boards (Die Boards mit dem ATmega168 oder ATmega328P) funktioniert diese Funktion auf den **Pins 3, 5, 6, 9, 10, und 11**. Der zweite Wert ist die Zykluszeit. Werte zwischen **0**(immer aus) und **255**(immer an) sind gültig.
    
    Setzt die Ausgabe auf dem LED-Pin proportional zu dem Wert, der von einem Potentiometer gelesen wird.
-   ```
+   ```c
    int ledPin = 9; // LED auf Digitalpin 9 verbunden
    int analogPin = 3; // Potentiometer auf Pin 3 verbunden
    int val = 0; // Variable, um den gelesenen Wert zu speichern
@@ -505,7 +505,7 @@ Operation  Result
 
 
    Folgender Code liest die Spannung auf einem Analogpin und zeigt diese an.
-   ```
+   ```c
    int analogPin = A3; // Pin, der gelesen werden soll: Pin A3
    int val = 0; // Variable, die den gelesenen Wert speichert
 
