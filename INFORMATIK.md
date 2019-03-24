@@ -453,7 +453,7 @@ Operation  Result
    ## 3. Pulsweitenmodulation PWM ##
    Die Pulsdauermodulation ist eine Modulationsart, bei der eine technische Größe (z. B. elektrische Spannung) zwischen zwei Werten wechselt.
    
-   ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/pwm.png)
+   ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/pwm_2.jpg)
    
    - **TON** (On Time): Wenn das Signal high ist.
 
