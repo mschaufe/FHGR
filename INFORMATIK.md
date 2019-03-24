@@ -519,4 +519,9 @@ Operation  Result
      Serial.println(val); // Wert ausgeben
    }
    ```
-
+   ## 4. Timer ##
+   
+   ### 8-bit Timer/Counter0 ###
+   
+   ### 16-bit Timer/Counter1 ###
+   
