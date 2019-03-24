@@ -450,3 +450,24 @@ Operation  Result
    ```
       Serial.println("Sali!");  
    ```
+   ## 3. Pulsweitenmodulation PWM ##
+   Die Pulsdauermodulation ist eine Modulationsart, bei der eine technische Größe (z. B. elektrische Spannung) zwischen zwei Werten wechselt.
+   
+   ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/pwm.png)
+   
+   - **TON** (On Time): Wenn das Signal high ist.
+
+   - **TOFF** (Off Time): Wenn das Signal low ist.
+
+   - **Period** Ist die lie Länge eines TON und TOFF .
+
+   - **Duty Cycle** Die Prozentzahl, in der das Signal high war. (TON * (Ton-TOFF) * 100
+   
+   ### analogWrite ###
+   Schreibt einen Analogwert (PWM-Welle) auf einen Pin. Kann z.B. benutzt werden, um eine LED mit verschiedener Helligkeit leuchten zu lassen oder einen Motor mit unterschiedlicher Geschwindigkeit laufen zu lassen.
+   
+   Die Syntax ist wie folgt aufgebaut: `analogWrite(pin, value)`. Als erstes ist der Pin auf den geschrieben werden soll als Integer. Achtung! Auf den meisten Arduino-Boards (Die Boards mit dem ATmega168 oder ATmega328P) funktioniert diese Funktion auf den **Pins 3, 5, 6, 9, 10, und 11**. Der zweite Wert ist die Zykluszeit. Werte zwischen 0 (immer aus) und 255 (immer an) sind gültig.
+   
+   
+   ### analogRead ###
+   
