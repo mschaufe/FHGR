@@ -466,8 +466,43 @@ Operation  Result
    ### analogWrite ###
    Schreibt einen Analogwert (PWM-Welle) auf einen Pin. Kann z.B. benutzt werden, um eine LED mit verschiedener Helligkeit leuchten zu lassen oder einen Motor mit unterschiedlicher Geschwindigkeit laufen zu lassen.
    
-   Die Syntax ist wie folgt aufgebaut: `analogWrite(pin, value)`. Als erstes ist der Pin auf den geschrieben werden soll als Integer. Achtung! Auf den meisten Arduino-Boards (Die Boards mit dem ATmega168 oder ATmega328P) funktioniert diese Funktion auf den **Pins 3, 5, 6, 9, 10, und 11**. Der zweite Wert ist die Zykluszeit. Werte zwischen 0 (immer aus) und 255 (immer an) sind gültig.
+   Die Syntax ist wie folgt aufgebaut: `analogWrite(pin, value)`. Als erstes ist der Pin auf den geschrieben werden soll als Integer. Achtung! Auf den meisten Arduino-Boards (Die Boards mit dem ATmega168 oder ATmega328P) funktioniert diese Funktion auf den **Pins 3, 5, 6, 9, 10, und 11**. Der zweite Wert ist die Zykluszeit. Werte zwischen **0**(immer aus) und **255**(immer an) sind gültig.
+   
+   Setzt die Ausgabe auf dem LED-Pin proportional zu dem Wert, der von einem Potentiometer gelesen wird.
+   ```
+   int ledPin = 9; // LED auf Digitalpin 9 verbunden
+   int analogPin = 3; // Potentiometer auf Pin 3 verbunden
+   int val = 0; // Variable, um den gelesenen Wert zu speichern
+
+   void setup() {
+     pinMode(ledPin, OUTPUT); // Setzt den Pin als output.
+   }
+
+   void loop() {
+     val = analogRead(analogPin); // Liest den Wert vom Pin ein
+     analogWrite(ledPin, val / 4); // analogRead: Werte von 0 bis 1023, analogWrite: Werte von 0 bis 255
+   }
+   ```
    
    
    ### analogRead ###
+   Liest den Wert vom angegebenen analogen Pin ein. Die Arduino-Boards enthalten einen 10-Bit-Analog-zu-Digital-Konverter. D.h. das Board mappt Eingangsspannungen zwischen 0 und 5 V auf Integer-Werte zwischen 0 und 1023. 
    
+   Die Syntax von `analogRead(pin)` besteht aus einem Parameter. Nämlich von dem Pinname, der gelesen werden soll. Den analog gelesenen Wert auf dem Pin (int). Allerdings ist der Wert limitiert durch die Auflösung des Digital-Konverters (0-1023 für 10 Bit und 0-4095 für 12 Bit).
+
+
+   Folgender Code liest die Spannung auf einem Analogpin und zeigt diese an.
+   ```
+   int analogPin = A3; // Pin, der gelesen werden soll: Pin A3
+   int val = 0; // Variable, die den gelesenen Wert speichert
+
+   void setup() {
+     Serial.begin(9600); // Setup der seriellen Verbindung
+   }
+
+   void loop() {
+     val = analogRead(analogPin); // Pin einlesen
+     Serial.println(val); // Wert ausgeben
+   }
+   ```
+
