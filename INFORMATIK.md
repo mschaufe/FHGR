@@ -417,9 +417,8 @@ increment(&num);
    Grundlegend ist er Gscheiduino absolut kompatibel zum Original (Arduino). Der Gscheiduino hat aber ein paar neue Features erhalten.
    
    ### Pinout ###
-   
-   ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/Gscheiduino.png)
-   
+
+   <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/Gscheiduino.png" width="700">
    ### Datasheet  ###
    
    [ATmega328P-PU](https://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf)
@@ -466,7 +465,7 @@ Operation  Result
    ```
    ## 3. Pulsweitenmodulation PWM ##
    Die Pulsdauermodulation ist eine Modulationsart, bei der eine technische Größe (z. B. elektrische Spannung) zwischen zwei Werten wechselt.
-   
+
    ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/pwm_2.jpg)
    
    - **TON** (On Time): Wenn das Signal high ist.
@@ -525,3 +524,5 @@ Operation  Result
    
    ### 16-bit Timer/Counter1 ###
    
+
+   <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
