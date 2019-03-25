@@ -261,7 +261,7 @@
    Die Variable `i` mit dem Wert 5 hat die (willkürliche) Speicheradresse `0xFF00`. Dem Zeiger `p` wurde die Adresse von `i` zugewiesen. Er hat den Wert `0xFF00`.
    
   ### Zuweisung ###
-  Die Zuweisung einer Adresse an einen Zeiger erfolgt mithilfe des Adressoperators, eines Arrays, eines weiteren Zeigers oder des Wertes von `NULL`.
+  Die Zuweisung einer Adresse an einen Zeiger erfolgt mit hilfe des Adressoperators, eines Arrays, eines weiteren Zeigers oder des Wertes von `NULL`.
   ```C
       int * zeiger, wert;
        wert = 5;
@@ -529,5 +529,6 @@ Operation  Result
 
    ## 5. Analog Digital Converter ADC ##
    
+   Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
    
