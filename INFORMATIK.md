@@ -526,3 +526,8 @@ Operation  Result
    
 
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
+
+   ## 5. Analog Digital Converter ADC ##
+   
+   
+   
