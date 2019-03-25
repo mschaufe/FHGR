@@ -518,6 +518,9 @@ Operation  Result
      Serial.println(val); // Wert ausgeben
    }
    ```
+   ### analogReadResolution ###
+   
+   Mit `analogReadResolution(bits)` kann man die genauigkeit angeben, meist bis auf 12-bit. Das würde dann bedeuten, dass `analogRead()` einen Wert zwischen 0 und 4095 ausgibt. 
    ## 4. Timer ##
    
    ### 8-bit Timer/Counter0
