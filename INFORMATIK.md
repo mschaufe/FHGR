@@ -541,4 +541,10 @@ Operation  Result
    
    Das auslösende Ereignis wird Unterbrechungsanforderung (englisch Interrupt Request, IRQ) genannt. Nach dieser Anforderung führt der Prozessor eine Unterbrechungsroutine aus. Anschließend wird das unterbrochene Programm dort fortgeführt, wo es unterbrochen wurde.
    
+   Das Gscheiduino hat die Pins `2`und `3`als Interrupt-Pins definiert. Der erste Parameter von `attachInterrupt()`ist die Interrupt-Nummer. Am besten man verwendet `digitalPinToInterrupt(pin)`. Der zweite Parameter ist `ISR (Interrupt Service Routine)`. Dort gibt man den Funktionsnamen ein, von der Funktion, die dann ausgeführt werden muss. Der letzte Parameter ist der `mode`:
+   + **LOW** löst den Trigger aus, wenn der Pin low ist
+   + **CHANGE** löst den Trigger aus, wenn der Pin sich änder
+   + **RISING** löst den Trigger aus, wenn der Pin von low zu high geht.
+   + **FALLING** löst den Trigger aus, wenn der Pin von high zu low geht.
+   + **HIGH** löst den Trigger aus, wenn der Pin high ist.   
    
