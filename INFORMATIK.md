@@ -419,7 +419,8 @@ increment(&num);
    ### Pinout ###
 
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/Gscheiduino.png" width="700">
-   ### Datasheet  ###
+   
+   ### Datasheet
    
    [ATmega328P-PU](https://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf)
    
