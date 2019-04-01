@@ -535,4 +535,10 @@ Operation  Result
    
    Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
+   [ResponsiveAnalogRead Library](https://github.com/dxinteractive/ResponsiveAnalogRead)
+   
+   ## 6. Interrupts ##
+   
+   Das auslösende Ereignis wird Unterbrechungsanforderung (englisch Interrupt Request, IRQ) genannt. Nach dieser Anforderung führt der Prozessor eine Unterbrechungsroutine aus. Anschließend wird das unterbrochene Programm dort fortgeführt, wo es unterbrochen wurde.
+   
    
