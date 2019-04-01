@@ -548,6 +548,7 @@ Operation  Result
    + **FALLING** löst den Trigger aus, wenn der Pin von high zu low geht.
    + **HIGH** löst den Trigger aus, wenn der Pin high ist.   
    
+   LED-Status ändert nach Interrupt:
    ```c
       const byte ledPin = 13;
       const byte interruptPin = 2;
