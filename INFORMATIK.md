@@ -497,7 +497,18 @@ Operation  Result
      analogWrite(ledPin, val / 4); // analogRead: Werte von 0 bis 1023, analogWrite: Werte von 0 bis 255
    }
    ```
+ 
+   ## 4. Timer ##
    
+   ### 8-bit Timer/Counter0
+   
+   ### 16-bit Timer/Counter1
+   
+
+   <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
+
+   ## 5. Analog Digital Converter ADC ##
+   Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
    ### analogRead ###
    Liest den Wert vom angegebenen analogen Pin ein. Die Arduino-Boards enthalten einen 10-Bit-Analog-zu-Digital-Konverter. D.h. das Board mappt Eingangsspannungen zwischen 0 und 5 V auf Integer-Werte zwischen 0 und 1023. 
@@ -519,23 +530,31 @@ Operation  Result
      Serial.println(val); // Wert ausgeben
    }
    ```
-   ### analogReadResolution ###
+   ### analogReadResolution
    
-   Mit `analogReadResolution(bits)` kann man die genauigkeit angeben, meist bis auf 12-bit. Das würde dann bedeuten, dass `analogRead()` einen Wert zwischen 0 und 4095 ausgibt. 
-   ## 4. Timer ##
+   Mit `analogReadResolution(bits)` kann man die genauigkeit angeben, meist bis auf 12-bit. Das würde dann bedeuten, dass `analogRead()` einen Wert zwischen 0 und 4095 ausgibt.
    
-   ### 8-bit Timer/Counter0
-   
-   ### 16-bit Timer/Counter1
-   
-
-   <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
-
-   ## 5. Analog Digital Converter ADC ##
-   
-   Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
-   
+   ### Library
    [ResponsiveAnalogRead Library](https://github.com/dxinteractive/ResponsiveAnalogRead)
+   
+   ### Register
+   
+   Der ADC benötigt 13 ADC-Taktzyklen, um eine Umwandlung durchzuführen, mit Ausnahme der ersten nach der Aktivierung des ADC. Zu diesem Zeitpunkt werden 25 ADC-Zyklen benötigt, während die Schaltung initialisiert wird.
+
+Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird die Taktrate des Prozessors heruntergerechnet, um einen ADC-Takt zu erhalten. Sie können dies tun, indem Sie das ADCSRA-Register wie folgt ändern:
+
+   ```c
+      ADCSRA &= ~(bit (ADPS0) | bit (ADPS1) | bit (ADPS2)); // clear prescaler bits
+
+      ADCSRA |= bit (ADPS0);                               //   2  
+      ADCSRA |= bit (ADPS1);                               //   4  
+      ADCSRA |= bit (ADPS0) | bit (ADPS1);                 //   8  
+      ADCSRA |= bit (ADPS2);                               //  16 
+      ADCSRA |= bit (ADPS0) | bit (ADPS2);                 //  32 
+      ADCSRA |= bit (ADPS1) | bit (ADPS2);                 //  64 
+      ADCSRA |= bit (ADPS0) | bit (ADPS1) | bit (ADPS2);   // 128
+   ```
+   
    
    ## 6. Interrupts ##
    
