@@ -510,6 +510,9 @@ Operation  Result
    ## 5. Analog Digital Converter ADC ##
    Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
+   <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/adc.png" width="300">
+   
+   
    ### analogRead ###
    Liest den Wert vom angegebenen analogen Pin ein. Die Arduino-Boards enthalten einen 10-Bit-Analog-zu-Digital-Konverter. D.h. das Board mappt Eingangsspannungen zwischen 0 und 5 V auf Integer-Werte zwischen 0 und 1023. 
    
