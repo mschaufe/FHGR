@@ -261,7 +261,7 @@
    Die Variable `i` mit dem Wert 5 hat die (willkürliche) Speicheradresse `0xFF00`. Dem Zeiger `p` wurde die Adresse von `i` zugewiesen. Er hat den Wert `0xFF00`.
    
   ### Zuweisung ###
-  Die Zuweisung einer Adresse an einen Zeiger erfolgt mithilfe des Adressoperators, eines Arrays, eines weiteren Zeigers oder des Wertes von `NULL`.
+  Die Zuweisung einer Adresse an einen Zeiger erfolgt mit hilfe des Adressoperators, eines Arrays, eines weiteren Zeigers oder des Wertes von `NULL`.
   ```C
       int * zeiger, wert;
        wert = 5;
@@ -417,10 +417,10 @@ increment(&num);
    Grundlegend ist er Gscheiduino absolut kompatibel zum Original (Arduino). Der Gscheiduino hat aber ein paar neue Features erhalten.
    
    ### Pinout ###
+
+   <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/Gscheiduino.png" width="700">
    
-   ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/Gscheiduino.png)
-   
-   ### Datasheet  ###
+   ### Datasheet
    
    [ATmega328P-PU](https://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf)
    
@@ -466,7 +466,7 @@ Operation  Result
    ```
    ## 3. Pulsweitenmodulation PWM ##
    Die Pulsdauermodulation ist eine Modulationsart, bei der eine technische Größe (z. B. elektrische Spannung) zwischen zwei Werten wechselt.
-   
+
    ![PWM](https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/pwm_2.jpg)
    
    - **TON** (On Time): Wenn das Signal high ist.
@@ -483,7 +483,7 @@ Operation  Result
    Die Syntax ist wie folgt aufgebaut: `analogWrite(pin, value)`. Als erstes ist der Pin auf den geschrieben werden soll als Integer. Achtung! Auf den meisten Arduino-Boards (Die Boards mit dem ATmega168 oder ATmega328P) funktioniert diese Funktion auf den **Pins 3, 5, 6, 9, 10, und 11**. Der zweite Wert ist die Zykluszeit. Werte zwischen **0**(immer aus) und **255**(immer an) sind gültig.
    
    Setzt die Ausgabe auf dem LED-Pin proportional zu dem Wert, der von einem Potentiometer gelesen wird.
-   ```
+   ```c
    int ledPin = 9; // LED auf Digitalpin 9 verbunden
    int analogPin = 3; // Potentiometer auf Pin 3 verbunden
    int val = 0; // Variable, um den gelesenen Wert zu speichern
@@ -497,7 +497,18 @@ Operation  Result
      analogWrite(ledPin, val / 4); // analogRead: Werte von 0 bis 1023, analogWrite: Werte von 0 bis 255
    }
    ```
+ 
+   ## 4. Timer ##
    
+   ### 8-bit Timer/Counter0
+   
+   ### 16-bit Timer/Counter1
+   
+
+   <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
+
+   ## 5. Analog Digital Converter ADC ##
+   Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
    ### analogRead ###
    Liest den Wert vom angegebenen analogen Pin ein. Die Arduino-Boards enthalten einen 10-Bit-Analog-zu-Digital-Konverter. D.h. das Board mappt Eingangsspannungen zwischen 0 und 5 V auf Integer-Werte zwischen 0 und 1023. 
@@ -506,7 +517,7 @@ Operation  Result
 
 
    Folgender Code liest die Spannung auf einem Analogpin und zeigt diese an.
-   ```
+   ```c
    int analogPin = A3; // Pin, der gelesen werden soll: Pin A3
    int val = 0; // Variable, die den gelesenen Wert speichert
 
@@ -519,9 +530,61 @@ Operation  Result
      Serial.println(val); // Wert ausgeben
    }
    ```
-   ## 4. Timer ##
+   ### analogReadResolution
    
-   ### 8-bit Timer/Counter0 ###
+   Mit `analogReadResolution(bits)` kann man die genauigkeit angeben, meist bis auf 12-bit. Das würde dann bedeuten, dass `analogRead()` einen Wert zwischen 0 und 4095 ausgibt.
    
-   ### 16-bit Timer/Counter1 ###
+   ### Library
+   [ResponsiveAnalogRead Library](https://github.com/dxinteractive/ResponsiveAnalogRead)
+   
+   ### Register
+   
+   Der ADC benötigt 13 ADC-Taktzyklen, um eine Umwandlung durchzuführen, mit Ausnahme der ersten nach der Aktivierung des ADC. Zu diesem Zeitpunkt werden 25 ADC-Zyklen benötigt, während die Schaltung initialisiert wird.
+
+Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird die Taktrate des Prozessors heruntergerechnet, um einen ADC-Takt zu erhalten. Sie können dies tun, indem Sie das ADCSRA-Register wie folgt ändern:
+
+   ```c
+      ADCSRA &= ~(bit (ADPS0) | bit (ADPS1) | bit (ADPS2)); // clear prescaler bits
+
+      ADCSRA |= bit (ADPS0);                               //   2  
+      ADCSRA |= bit (ADPS1);                               //   4  
+      ADCSRA |= bit (ADPS0) | bit (ADPS1);                 //   8  
+      ADCSRA |= bit (ADPS2);                               //  16 
+      ADCSRA |= bit (ADPS0) | bit (ADPS2);                 //  32 
+      ADCSRA |= bit (ADPS1) | bit (ADPS2);                 //  64 
+      ADCSRA |= bit (ADPS0) | bit (ADPS1) | bit (ADPS2);   // 128
+   ```
+   
+   
+   ## 6. Interrupts ##
+   
+   Das auslösende Ereignis wird Unterbrechungsanforderung (englisch Interrupt Request, IRQ) genannt. Nach dieser Anforderung führt der Prozessor eine Unterbrechungsroutine aus. Anschließend wird das unterbrochene Programm dort fortgeführt, wo es unterbrochen wurde.
+   
+   Das Gscheiduino hat die Pins `2`und `3`als Interrupt-Pins definiert. Der erste Parameter von `attachInterrupt()`ist die Interrupt-Nummer. Am besten man verwendet `digitalPinToInterrupt(pin)`. Der zweite Parameter ist `ISR (Interrupt Service Routine)`. Dort gibt man den Funktionsnamen ein, von der Funktion, die dann ausgeführt werden muss. Der letzte Parameter ist der `mode`:
+   + **LOW** löst den Trigger aus, wenn der Pin low ist
+   + **CHANGE** löst den Trigger aus, wenn der Pin sich änder
+   + **RISING** löst den Trigger aus, wenn der Pin von low zu high geht.
+   + **FALLING** löst den Trigger aus, wenn der Pin von high zu low geht.
+   + **HIGH** löst den Trigger aus, wenn der Pin high ist.   
+   
+   LED-Status ändert nach Interrupt:
+   ```c
+      const byte ledPin = 13;
+      const byte interruptPin = 2;
+      volatile byte state = LOW;
+
+      void setup() {
+        pinMode(ledPin, OUTPUT);
+        pinMode(interruptPin, INPUT_PULLUP);
+        attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);
+      }
+
+      void loop() {
+        digitalWrite(ledPin, state);
+      }
+
+      void blink() {
+        state = !state;
+      }
+   ```
    
