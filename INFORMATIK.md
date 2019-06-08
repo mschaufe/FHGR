@@ -506,26 +506,8 @@ Operation  Result
    
 
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
-## 5. Watchdog ## 
-   Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch:
-      
-      ```c
-         #include <avr/wdt.h>
 
-         void setup() {
-         Serial.begin(9600); Serial.println("Sketch gestartet"); 
-         //Aktiviere Watchdog mit 4s Zeitkonstante 
-         wdt_enable(WDTO_4S);
-         }
 
-         void loop() {
-           Serial.println("Warte einen Moment");
-           delay(5000);
-           Serial.println("Bin wieder da, aber das wirst Du nie zu sehen bekommen,vorher beisst der Watchdog zu."); 
-           // Setze Watchdog Zähler zurück 
-           wdt_reset();
-         } 
-      ```
    ## 6. Analog Digital Converter ADC ##
    Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
@@ -610,3 +592,22 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
       }
    ```
    
+   ## 5. Watchdog ## 
+   Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch: 
+   ```c
+      #include <avr/wdt.h>
+
+         void setup() {
+         Serial.begin(9600); Serial.println("Sketch gestartet"); 
+         //Aktiviere Watchdog mit 4s Zeitkonstante 
+         wdt_enable(WDTO_4S);
+         }
+
+         void loop() {
+           Serial.println("Warte einen Moment");
+           delay(5000);
+           Serial.println("Bin wieder da, aber das wirst Du nie zu sehen bekommen,vorher beisst der Watchdog zu."); 
+           // Setze Watchdog Zähler zurück 
+           wdt_reset();
+         } 
+   ```
