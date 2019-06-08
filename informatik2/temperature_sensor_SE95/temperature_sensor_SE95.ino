@@ -16,7 +16,6 @@ void setup()
 {
   Wire.begin();        // join i2c bus (address optional for master)
   Serial.begin(115200);  // start serial for output
-
 }
 
 void loop()
@@ -33,5 +32,5 @@ void loop()
     Serial.println(temp_f);         // print the character
   }
 
-  delay(1500);
+  delay(1500); // Wait
 }
