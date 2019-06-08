@@ -506,8 +506,9 @@ Operation  Result
    
 
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
-## 5. Watchdog
-Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch:
+## 5. Watchdog ## 
+   Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch:
+      
       ```c
          #include <avr/wdt.h>
 
