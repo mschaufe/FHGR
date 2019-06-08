@@ -508,6 +508,7 @@ Operation  Result
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
 
    ## 5. Watchdog ## 
+   ### Beispiel 1 ###
    Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch: 
    ```c
       #include <avr/wdt.h>
@@ -526,7 +527,7 @@ Operation  Result
            wdt_reset();
          } 
    ```
-   Ausgabe:
+   Wie erwartet ist die Ausgabe des Sketchs dann:
    ```
    Sketch gestartet
    Warte einen Moment
@@ -535,8 +536,50 @@ Operation  Result
    Sketch gestartet
    Warte einen Moment
    ...
-
    ```
+   ### Beispiel 2 ###
+   ```c
+      #include <avr/wdt.h>
+
+      unsigned long measure_val;
+
+      void setup() {
+      Serial.begin(9600); 
+      Serial.println("Sketch gestartet"); 
+      //Aktiviere Watchdog mit 2s Zeitkonstante 
+      wdt_enable(WDTO_2S);
+      }
+
+      void loop() {
+      Serial.println("Lese Sensor aus"); 
+      measure_val = readSensor();
+      // Setze Watchdog Zähler zurück 
+      wdt_reset();
+      }
+
+      unsigned long readSensor() { 
+      pinMode(5, OUTPUT);
+      pinMode(6, INPUT);
+      // Verlange Messung vom Sensor: 
+      digitalWrite(5, HIGH); 
+      delay(10);
+      digitalWrite(5, LOW);
+        while (digitalRead(6) == LOW) {
+          //Warte auf Sensorkommunikation
+      }
+        // Sensorkommunikation...
+        Serial.println("Sensor ausgelesen.");
+      }
+   ```
+   Wie erwartet ist die Ausgabe des Sketchs dann:
+   ```
+   Sketch gestartet
+   Lese Sensor aus
+   Sketch gestartet
+   Lese Sensor aus
+   ...
+   ```   
+   
    ## 6. Analog Digital Converter ADC ##
    Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
