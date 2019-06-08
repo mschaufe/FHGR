@@ -507,7 +507,94 @@ Operation  Result
 
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
 
-   ## 5. Analog Digital Converter ADC ##
+   ## 5. Watchdog ## 
+   ### Beispiel 1 ###
+   Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch: 
+   ```c
+      #include <avr/wdt.h>
+
+         void setup() {
+         Serial.begin(9600); Serial.println("Sketch gestartet"); 
+         //Aktiviere Watchdog mit 4s Zeitkonstante 
+         wdt_enable(WDTO_4S);
+         }
+
+         void loop() {
+           Serial.println("Warte einen Moment");
+           delay(5000);
+           Serial.println("Bin wieder da, aber das wirst Du nie zu sehen bekommen,vorher beisst der Watchdog zu."); 
+           // Setze Watchdog Zähler zurück 
+           wdt_reset();
+         } 
+   ```
+   Wie erwartet ist die Ausgabe des Sketchs dann:
+   ```
+   Sketch gestartet
+   Warte einen Moment
+   Sketch gestartet
+   Warte einen Moment
+   Sketch gestartet
+   Warte einen Moment
+   ...
+   ```
+   ### Beispiel 2 ###
+   Ein bisschen realer ist folgendes Beispiel, hier reagieren wir auf einen nicht mehr reagierenden Sensor mit einem Reset:
+   ```c
+      #include <avr/wdt.h>
+
+      unsigned long measure_val;
+
+      void setup() {
+      Serial.begin(9600); 
+      Serial.println("Sketch gestartet"); 
+      //Aktiviere Watchdog mit 2s Zeitkonstante 
+      wdt_enable(WDTO_2S);
+      }
+
+      void loop() {
+      Serial.println("Lese Sensor aus"); 
+      measure_val = readSensor();
+      // Setze Watchdog Zähler zurück 
+      wdt_reset();
+      }
+
+      unsigned long readSensor() { 
+      pinMode(5, OUTPUT);
+      pinMode(6, INPUT);
+      // Verlange Messung vom Sensor: 
+      digitalWrite(5, HIGH); 
+      delay(10);
+      digitalWrite(5, LOW);
+        while (digitalRead(6) == LOW) {
+          //Warte auf Sensorkommunikation
+      }
+        // Sensorkommunikation...
+        Serial.println("Sensor ausgelesen.");
+      }
+   ```
+   Der Sketch wird ebenfalls immer wieder neu starten, ausser der eingebildete Sensor an D5 und D6 sendet Daten, deren Anfang er mit einem HIGH Puls auf D6 signalisiert. Um dies zu testen, verbinde testweise D6 mit 5V und der Watchdog kann nicht mehr zuschlagen.<br>
+   Sensor nicht verbunden WD reagiert nach 2s und startet Programm neu.
+   ```
+   14:54:10.200 -> Sketch gestartet
+   14:54:10.236 -> Lese Sensor aus
+   14:54:12.426 -> Sketch gestartet
+   14:54:12.462 -> Lese Sensor aus
+   14:54:14.648 -> Sketch gestartet
+   14:54:14.683 -> Lese Sensor aus
+   ...
+   ```   
+   Sensor verbunden WD reagiert nicht.
+   ```
+   14:54:45.997 -> Lese Sensor aus
+   14:54:45.997 -> Sensor ausgelesen.
+   14:54:46.030 -> Lese Sensor aus
+   14:54:46.030 -> Sensor ausgelesen.
+   14:54:46.067 -> Lese Sensor aus
+   14:54:46.067 -> Sensor ausgelesen.
+   ...
+   ```    
+
+   ## 6. Analog Digital Converter ADC ##
    Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/adc.png" width="300">
@@ -559,7 +646,7 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
    ```
    
    
-   ## 6. Interrupts ##
+   ## 7. Interrupts ##
    
    Das auslösende Ereignis wird Unterbrechungsanforderung (englisch Interrupt Request, IRQ) genannt. Nach dieser Anforderung führt der Prozessor eine Unterbrechungsroutine aus. Anschließend wird das unterbrochene Programm dort fortgeführt, wo es unterbrochen wurde.
    
@@ -591,3 +678,4 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
       }
    ```
    
+
