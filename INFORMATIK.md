@@ -508,6 +508,18 @@ Operation  Result
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/blockschaltbild.png" width="700">
 
    ## 5. Watchdog ## 
+   
+   Technisch wird das so realisiert, dass es einen Zeitgeber (z. B. Kondensator oder Timer) gibt, den man regelmäßig zurücksetzen muss. Ist der Mikrocontroller abgestürzt, dann kann er das nicht mehr tun und der Watchdog löst den Reset aus.<br><img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/wd.png" width="200">
+   Der Watchdog ist im Prinzip zur Stelle, wenn kein Anwender da ist, um den Resetknopf zu drücken.
+
+Der Watchdog bringt dabei das System aus einem unvorhergesehenen Fehlerzustand wieder in einen betriebsbereiten Zustand.
+
+Dieser Zustand nach einem WDT Reset kann je nach Implementierung im Programm sein:
+
++ Debugzustand
++ Sicherheitszustand
++ Betriebszustand
+
    ### Beispiel 1 ###
    Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch: 
    ```c
