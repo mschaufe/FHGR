@@ -538,6 +538,7 @@ Operation  Result
    ...
    ```
    ### Beispiel 2 ###
+   Ein bisschen realer ist folgendes Beispiel, hier reagieren wir auf einen nicht mehr reagierenden Sensor mit einem Reset:
    ```c
       #include <avr/wdt.h>
 
@@ -571,15 +572,28 @@ Operation  Result
         Serial.println("Sensor ausgelesen.");
       }
    ```
-   Wie erwartet ist die Ausgabe des Sketchs dann:
+   Der Sketch wird ebenfalls immer wieder neu starten, ausser der eingebildete Sensor an D5 und D6 sendet Daten, deren Anfang er mit einem HIGH Puls auf D6 signalisiert. Um dies zu testen, verbinde testweise D6 mit 5V und der Watchdog kann nicht mehr zuschlagen.<br>
+   Sensor nicht verbunden WD reagiert nach 2s und startet Programm neu.
    ```
-   Sketch gestartet
-   Lese Sensor aus
-   Sketch gestartet
-   Lese Sensor aus
+   14:54:10.200 -> Sketch gestartet
+   14:54:10.236 -> Lese Sensor aus
+   14:54:12.426 -> Sketch gestartet
+   14:54:12.462 -> Lese Sensor aus
+   14:54:14.648 -> Sketch gestartet
+   14:54:14.683 -> Lese Sensor aus
    ...
    ```   
-   
+   Sensor verbunden WD reagiert nicht.
+   ```
+   14:54:45.997 -> Lese Sensor aus
+   14:54:45.997 -> Sensor ausgelesen.
+   14:54:46.030 -> Lese Sensor aus
+   14:54:46.030 -> Sensor ausgelesen.
+   14:54:46.067 -> Lese Sensor aus
+   14:54:46.067 -> Sensor ausgelesen.
+   ...
+   ```    
+
    ## 6. Analog Digital Converter ADC ##
    Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
