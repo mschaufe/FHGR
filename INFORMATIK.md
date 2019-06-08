@@ -526,7 +526,17 @@ Operation  Result
            wdt_reset();
          } 
    ```
-   
+   Ausgabe:
+   ```
+   Sketch gestartet
+   Warte einen Moment
+   Sketch gestartet
+   Warte einen Moment
+   Sketch gestartet
+   Warte einen Moment
+   ...
+
+   ```
    ## 6. Analog Digital Converter ADC ##
    Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
