@@ -503,6 +503,7 @@ Operation  Result
    Ein Timer wird verwendet, weil Sie während der Funktion delay () nichts machen können. Aber mit einem Timer können Sie alles machen, denn wenn der Moment kommt, aktiviert er den Interrupt.
    ### Prescaler ###
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/pre.png" width="700">
+   #### Beispiel ####
    LED Blinkt jede Sekunde.
 
    ```c
@@ -539,7 +540,77 @@ Operation  Result
      i++; // increment i
    }
    ```
+   
+   ### TimerOne Library ###
+   
+   #### Configuration ####
+   Timer1.initialize(microseconds);
+   > Begin using the timer. This function must be called first. "microseconds" is the period of time the timer takes.
 
+   Timer1.setPeriod(microseconds);
+   > Set a new period after the library is already initialized.
+
+   #### Run Control ####
+   Timer1.start();
+   > Start the timer, beginning a new period.
+
+   Timer1.stop();
+   > Stop the timer.
+
+   Timer1.restart();
+   > Restart the timer, from the beginning of a new period.
+
+   Timer1.resume();
+   > Resume running a stopped timer. A new period is not begun.
+
+   #### PWM Signal Output ####
+   Timer1.pwm(pin, duty);
+   > Configure one of the timer's PWM pins. "duty" is from 0 to 1023, where 0 makes the pin always LOW and 1023 makes the pin always HIGH.
+
+   Timer1.setPwmDuty(pin, duty);
+   > Set a new PWM, without reconfiguring the pin. This is slightly faster than pwm(), but pwm() must be used at least once to configure the pin.
+
+   Timer1.disablePwm(pin);
+   > Stop using PWM on a pin. The pin reverts to being controlled by digitalWrite().
+
+   #### Interrupt Function ####
+   Timer1.attachInterrupt(function);
+   > Run a function each time the timer period finishes. The function is run as an interrupt, so special care is needed to share any variables beteen the interrupt function and your main program.
+
+   Timer1.detachInterrupt();
+   > Disable the interrupt, so the function no longer runs.
+
+   #### Beispiel ####
+
+   LED Blinkt jede Sekunde.
+   ```c
+   #include <TimerOne.h>
+ 
+   void setup() 
+   {
+     // Initialize the digital pin as an output.
+     // Pin 13 has an LED connected on most Arduino boards
+     pinMode(13, OUTPUT);    
+
+     Timer1.initialize(1000000); // set a timer of length 100000 microseconds (or 0.1 sec - or 10Hz => the led will blink 5 times, 5 cycles of on-and-off, per second)
+     Timer1.attachInterrupt( timerIsr ); // attach the service routine here
+   }
+
+   void loop()
+   {
+     // Main code loop
+     // TODO: Put your regular (non-ISR) logic here
+   }
+
+   /// --------------------------
+   /// Custom ISR Timer Routine
+   /// --------------------------
+   void timerIsr()
+   {
+       // Toggle LED
+       digitalWrite( 13, digitalRead( 13 ) ^ 1 );
+   }
+   ```
    ## 5. Watchdog ## 
    
    Technisch wird das so realisiert, dass es einen Zeitgeber (z. B. Kondensator oder Timer) gibt, den man regelmäßig zurücksetzen muss. Ist der Mikrocontroller abgestürzt, dann kann er das nicht mehr tun und der Watchdog löst den Reset aus.<br><img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/wd.png" width="200"><br>
