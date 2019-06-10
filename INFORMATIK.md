@@ -516,7 +516,7 @@ Operation  Result
      TCCR1B = 0; // set TCCR1B register to 0
      TCNT1  = 0; // reset counter value
 
-     OCR1A = 31249; // compare match register
+     OCR1A = 15624; // compare match register
 
      // set prescaler
      TCCR1B |= (1 << CS12) | (1 << CS10);   
