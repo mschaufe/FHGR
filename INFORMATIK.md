@@ -500,9 +500,7 @@ Operation  Result
  
    ## 4. Timer ##
    
-   ### 8-bit Timer/Counter0
-   
-   ### 16-bit Timer/Counter1
+   Ein Timer wird verwendet, weil Sie während der Funktion delay () nichts machen können. Aber mit einem Timer können Sie alles machen, denn wenn der Moment kommt, aktiviert er den Interrupt.
 
 
    ## 5. Watchdog ## 
