@@ -501,6 +501,9 @@ Operation  Result
    ## 4. Timer ##
    
    Ein Timer wird verwendet, weil Sie während der Funktion delay () nichts machen können. Aber mit einem Timer können Sie alles machen, denn wenn der Moment kommt, aktiviert er den Interrupt.
+   ### Prescaler ###
+   <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/pre.png" width="700">
+   
 
 
    ## 5. Watchdog ## 
