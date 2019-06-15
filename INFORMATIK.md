@@ -544,43 +544,51 @@ Operation  Result
    
    ### TimerOne Library ###
    
-   #### Configuration ####
+   #### Configuration
+   ```c
    Timer1.initialize(microseconds);
-   > Begin using the timer. This function must be called first. "microseconds" is the period of time the timer takes.
+   //Begin using the timer. This function must be called first. "microseconds" is the period of time the timer takes.
 
    Timer1.setPeriod(microseconds);
-   > Set a new period after the library is already initialized.
-
-   #### Run Control ####
+   // Set a new period after the library is already initialized.
+   ```
+   
+   
+   #### Run Control 
+   ```c
    Timer1.start();
-   > Start the timer, beginning a new period.
+   // Start the timer, beginning a new period.
 
    Timer1.stop();
-   > Stop the timer.
+   // Stop the timer.
 
    Timer1.restart();
-   > Restart the timer, from the beginning of a new period.
+   // Restart the timer, from the beginning of a new period.
 
    Timer1.resume();
-   > Resume running a stopped timer. A new period is not begun.
-
+   // Resume running a stopped timer. A new period is not begun.
+   ```
    #### PWM Signal Output ####
+   ```c
    Timer1.pwm(pin, duty);
-   > Configure one of the timer's PWM pins. "duty" is from 0 to 1023, where 0 makes the pin always LOW and 1023 makes the pin always HIGH.
+   // Configure one of the timer's PWM pins. "duty" is from 0 to 1023, where 0 makes the pin always LOW and 1023 makes the pin always HIGH.
 
    Timer1.setPwmDuty(pin, duty);
-   > Set a new PWM, without reconfiguring the pin. This is slightly faster than pwm(), but pwm() must be used at least once to configure the pin.
+   // Set a new PWM, without reconfiguring the pin. This is slightly faster than pwm(), but pwm() must be used at least once to configure the pin.
 
    Timer1.disablePwm(pin);
-   > Stop using PWM on a pin. The pin reverts to being controlled by digitalWrite().
-
+   // Stop using PWM on a pin. The pin reverts to being controlled by digitalWrite().
+   ```
+   
    #### Interrupt Function ####
+   ```c
    Timer1.attachInterrupt(function);
-   > Run a function each time the timer period finishes. The function is run as an interrupt, so special care is needed to share any variables beteen the interrupt function and your main program.
+   // Run a function each time the timer period finishes. The function is run as an interrupt, so special care is needed to share any variables beteen the interrupt function and your main program.
 
    Timer1.detachInterrupt();
-   > Disable the interrupt, so the function no longer runs.
-
+   // Disable the interrupt, so the function no longer runs.
+   ```
+   
    #### Beispiel ####
 
    LED Blinkt jede Sekunde.
