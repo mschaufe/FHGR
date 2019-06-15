@@ -633,8 +633,8 @@ Dieser Zustand nach einem WDT Reset kann je nach Implementierung im Programm sei
 + Sicherheitszustand
 + Betriebszustand
 
-   ### Beispiel 1 ###
-   Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch: 
+### Beispiel 1 ###
+Um einfach mal die Funktion des Watchdogs zu verdeutlichen hilft folgender Sketch: 
    ```c
       #include <avr/wdt.h>
 
@@ -662,8 +662,8 @@ Dieser Zustand nach einem WDT Reset kann je nach Implementierung im Programm sei
    Warte einen Moment
    ...
    ```
-   ### Beispiel 2 ###
-   Ein bisschen realer ist folgendes Beispiel, hier reagieren wir auf einen nicht mehr reagierenden Sensor mit einem Reset:
+### Beispiel 2 ###
+Ein bisschen realer ist folgendes Beispiel, hier reagieren wir auf einen nicht mehr reagierenden Sensor mit einem Reset:
    ```c
       #include <avr/wdt.h>
 
@@ -719,8 +719,8 @@ Dieser Zustand nach einem WDT Reset kann je nach Implementierung im Programm sei
    ...
    ```    
 
-   ## 6. Analog Digital Converter ADC ##
-   Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
+## 6. Analog Digital Converter ADC ##
+Der ADC wandelt ein analoges (kontinuierliches) Signal in ein digitales (zeitdiskretes) Signal um.
    
    <img src="https://github.com/mschaufe/htw/blob/master/informatik2/pictures_md/adc.png" width="300">
    
@@ -771,7 +771,7 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
    ```
    
    
-   ## 7. Interrupts ##
+## 7. Interrupts ##
    
    Das auslösende Ereignis wird Unterbrechungsanforderung (englisch Interrupt Request, IRQ) genannt. Nach dieser Anforderung führt der Prozessor eine Unterbrechungsroutine aus. Anschließend wird das unterbrochene Programm dort fortgeführt, wo es unterbrochen wurde.
    
