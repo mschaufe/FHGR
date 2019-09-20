@@ -2,11 +2,11 @@
 clear all; clc; format compact; format short g;
 
 % Parameter:
-R=8; r=5;
-u_0=0; u_E=2*pi; v_0=0; v_E=2*pi; N_u=45; N_v=90; fig=1;
+a=12; b=4;
+u_0=0; u_E=2*pi; v_0=-1; v_E=1; N_u=45; N_v=90; fig=1;
 
 % Funktion:
-P=@(u,v){(R+r*sin(u)).*cos(v);(R+r*sin(u)).*sin(v);r*cos(u)};
+P=@(u,v){(v.*a; b*(1-s^4)*cos(u).; b*(1-s^4)*sin(u).};
 
 % Daten:
 u_data=linspace(u_0,u_E,N_u);
