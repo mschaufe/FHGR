@@ -22,7 +22,7 @@
    ### Header comment ###
       /*****************************
        * Marc Schaufelberger *
-       * HTW CHUR *
+       * FHGR *
        * 00. XXX 2019 *
        * Projekt *
       ******************************/
