@@ -26,6 +26,8 @@
    
    ## 2 Funktionen ##
    
-   ```
+   ```Mathematica
    f[x_] := x^2
    ```
+   
+ 
