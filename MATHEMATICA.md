@@ -80,7 +80,14 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    
    #### SetOptions ####
    ```
-   SetOptions[Plot, PlotStyle -> Dashing[{.05, .01}]];
+   SetOptions[Plot,
+     Frame -> True,
+     FrameLabel -> {{"links", None}, {"unten", "oben"}},
+     FrameTicks -> {Automatic, Automatic},
+     GridLinesStyle -> LightGray,
+     GridLines -> {Automatic, Automatic},
+     PlotStyle -> Directive[Dashing[{.01, .01}], Red]
+    ];
    ```
    
    
