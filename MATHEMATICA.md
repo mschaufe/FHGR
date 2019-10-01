@@ -44,4 +44,41 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    Plot[Sin[x], {x, 0, 6 Pi}]
    ```
    
- 
+   ### Plot Optionen ###
+   
+   #### Frame ####
+   Umrandet die Grafik
+   ```
+   Frame -> True
+   ```
+   
+   #### PlotRange ####
+   Koordinatenbereich der Grafik
+   ```
+   PlotRange -> {{0, 5}, {0, 20}}
+   ```
+   y,x
+   
+   #### Grid ####
+   Linienfarbe
+   ```   
+   GridLinesStyle -> LightGray
+   ```
+   Abstand der Linien
+   ``` 
+   GridLines -> {Range[0, 5], Range[0, 20,2]}
+   ``` 
+   
+   #### AspectRatio ####
+   Hier kann das Seitenverhältnis angegeben werden. 
+   ``` 
+   AspectRatio -> 0.5
+   ``` 
+   
+   #### SetOptions ####
+   ```
+   SetOptions[Plot, PlotStyle -> Dashing[{.05, .01}]];
+   ```
+   
+   
+  
