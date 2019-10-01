@@ -50,6 +50,8 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    Umrandet die Grafik
    ```
    Frame -> True
+   FrameLabel -> {{"links", None}, {"unten", "oben"}}
+   FrameTicks -> {{Automatic, None}, {Range[0, 20, 5], None}
    ```
    
    #### PlotRange ####
