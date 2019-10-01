@@ -74,7 +74,9 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ``` 
    #### PlotStyle ####
    Mit Directive werden mehrere Styles kombiniert.
+   ```
    PlotStyle -> Directive[Dashing[{.01, .01}], Red]
+   ```
    
    #### SetOptions ####
    ```
