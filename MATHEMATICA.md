@@ -25,11 +25,17 @@
    ```
    
    ## 2 Funktionen ##
-   
+   Auf der linken Seite legen wir den Funktionsnamen fest, hier “f” und wählen einen Namen für das
+Argument der Funktion “x”. Beachten Sie das wichtige “x_” auf der linken Seite, das ein sogenanntes
+Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentliche Fuktionsdefinition mit “x” als Argument, ohne dem “_”.<br><br>
+   Definieren
    ```
    f[x_] := x^2
    ```
-   
+   Anwendung
+   ```
+   f[5]
+   ```
    ## 3 Plot ##
    
    ### 2D Plot ###
