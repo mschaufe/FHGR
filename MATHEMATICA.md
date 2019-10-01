@@ -32,7 +32,7 @@
    
    ## 3 Plot ##
    
-   ### 3.1 2D Plot ###
+   ### 2D Plot ###
    
    ```
    Plot[Sin[x], {x, 0, 6 Pi}]
