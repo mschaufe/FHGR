@@ -53,12 +53,11 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    
    #### PlotRange ####
-   Koordinatenbereich der Grafik
+   Koordinatenbereich der Grafik (y,x)
    ```
    PlotRange -> {{0, 5}, {0, 20}}
    ```
-   y,x
-   
+
    #### Grid ####
    Linienfarbe
    ```   
