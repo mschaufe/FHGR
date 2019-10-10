@@ -90,5 +90,24 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
     ];
    ```
    
+   ## 4 Import ##
+   
+   ### Microsoft Excel ###
+   Importiert die Excel-Datei in Mathematica.
+   ```
+   Import["/Users/ms/Desktop/test.xlsx", {"Data", 1, {1, 2}, 2}]
+   ```
+   
+
+   ```
+   Import["/Users/ms/Desktop/test.xlsx", {"Data", 1, All, 2}]
+   Import["/Users/ms/Desktop/test.xlsx", {"Data", 1, {1,3,66}, 2}]
+   Import["/Users/ms/Desktop/test.xlsx", {"Data", 1, Range[1,5], 2}]
+   ```
+   Syntax:
+   ```
+   {"Data", # of sheet(s), # of row(s), # of column(s)}
+   ```
+   
    
   
