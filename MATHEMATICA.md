@@ -24,7 +24,7 @@
    {a, b, c} . {x, y, z}
    ```
    
-   ## 2 Funktionen ##
+   ## 2 Funktionen  ##
    Auf der linken Seite legen wir den Funktionsnamen fest, hier “f” und wählen einen Namen für das
 Argument der Funktion “x”. Beachten Sie das wichtige “x_” auf der linken Seite, das ein sogenanntes
 Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentliche Fuktionsdefinition mit “x” als Argument, ohne dem “_”.<br><br>
@@ -36,7 +36,7 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    f[5]
    ```
-   ## 3 Plot ##
+   ## 3 Plot :chart_with_upwards_trend: ##
    
    ### 2D Plot ###
    
