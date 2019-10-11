@@ -43,6 +43,11 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    Plot[Sin[x], {x, 0, 6 Pi}]
    ```
+   ### Plot in loop ###
+   ```
+   Do[Print[Plot[x^n, {x, -5, 5}]], {n, 1, 10}]
+   ```
+   Es muss um Plot ein Print stehen!
    
    ### Plot Optionen ###
    
