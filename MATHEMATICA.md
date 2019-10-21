@@ -87,7 +87,7 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    SetOptions[Plot,
      Frame -> True,
-     FrameLabel -> {{"links", None}, {"unten", "oben"}},
+     FrameLabel -> {{"links", None}, {"unten", Style["oben", Black, 18]}},
      FrameTicks -> {{Automatic, None}, {Automatic, None}},
      GridLinesStyle -> LightGray,
      GridLines -> {Automatic, Automatic},
