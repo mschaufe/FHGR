@@ -12,11 +12,6 @@
    ```
    Cross[{a, b, c}, {x, y, z}]
    ```
-   oder 
-   ```
-   {a, b, c}\[Cross]{x, y, z}
-   ```
-   Eingabe mit `esc` cross `esc`.
    
    ### Skalarprodukt
    Das Skalarprodukt benötigst du in der analytischen Geometrie sehr häufig. Du kannst es verwenden um den von zwei Vekoten aufgespannten Winkel oder die Fläche des dazugehörigen Parallelogramms zu berechnen. Weiter kannst du mit dem Skalarprodukt einfach Orthogonalität oder Kolliniarität nachweisen.
