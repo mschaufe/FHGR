@@ -1,4 +1,4 @@
-# Semester I
+# Semester I (C)
 
 ## 0. Datentypen ##
    ### Signed / Unsigned ###
@@ -408,7 +408,7 @@ increment(&num);
    ergebnis = a % b; // Ergebnis hat den Wert 1
    ```
    
-   # Semester II
+   # Semester II (µC)
    
    
 
@@ -803,4 +803,7 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
       }
    ```
    
+# Semester III (C++)
+
+
 
