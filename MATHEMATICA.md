@@ -58,6 +58,7 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    Frame -> True
    FrameLabel -> {{"links", None}, {"unten", "oben"}}
+   FrameLabel -> {{"links", None}, {"unten", Style["oben", Black, 18]}},
    FrameTicks -> {{Automatic, None}, {Range[0, 20, 5], None}
    ```
    
@@ -72,6 +73,7 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```   
    GridLinesStyle -> LightGray
    GridLines -> {Range[0, 5], Range[0, 20,2]}
+   GridLines -> {Automatic, Automatic}
    ```
    
    #### AspectRatio ####
@@ -89,11 +91,8 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    SetOptions[Plot,
      Frame -> True,
-     FrameLabel -> {{"links", None}, {"unten", Style["oben", Black, 18]}},
      FrameTicks -> {{Automatic, None}, {Automatic, None}},
-     GridLinesStyle -> LightGray,
-     GridLines -> {Automatic, Automatic},
-     PlotStyle -> Directive[Dashing[{.01, .01}], Red]
+     GridLinesStyle -> LightGray
     ];
    ```
    
