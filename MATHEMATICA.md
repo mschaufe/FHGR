@@ -45,11 +45,18 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    f[5]
    ```
+   Amplitude
+   ```
+   FindMaximum[x Cos[x], {x, 2}]
+   FindMaximum[{x Cos[x], 1 <= x <= 15}, {x, 7}]
+   ```
+   Gibt das Maximum der Funktion an. Mit {x, 2} wird die suche bei x=2 gestartet und nimmt das nächste maximum in der Nähe. Die suche kann noch weiter eingegrenzt werden. 
    ### Signal ###
    Fundamentale Periode
    ```
    FunctionPeriod[2 Cos[3 x], x]
    ```
+   
    
    ## 3 Plot ##
    
