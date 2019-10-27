@@ -1,6 +1,17 @@
 # Mathematica Cheat Sheet
-   ## 0 Eingabe ##
-   
+   ## 0 Konstanten ##
+   Lichtgeschwindigkeit im Vakuum
+   ```
+   c = 299792458;
+   ```
+   Planck-Konstante
+   ```
+   h = 299792458;
+   ```
+   Dirac-Konstante
+   ```
+   \[HBar] = h/(2 Pi);
+   ```
    ## 1 Vektoren ##
    ### Betrag eines Vektors
    Der Betrag eines Vektors entspricht der Länge dieses Vektors.
