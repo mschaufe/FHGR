@@ -6,7 +6,7 @@
    ```
    Planck-Konstante
    ```
-   h = 299792458;
+   h = 6.62607015*10^-34;
    ```
    Dirac-Konstante
    ```
