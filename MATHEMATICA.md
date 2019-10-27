@@ -2,15 +2,17 @@
    ## 0 Konstanten ##
    Lichtgeschwindigkeit im Vakuum
    ```
-   c = 299792458;
+   c = 299792458;(*m/s*)
    ```
    Planck-Konstante
    ```
-   h = 6.62607015*10^-34;
+   h = 6.62607015*10^-34;(*Js*)
+   heV = 4.135667696923859*(10^-15);(*eVs*)
    ```
    Dirac-Konstante
    ```
-   \[HBar] = h/(2 Pi);
+   \[HBar] = h/(2 Pi);(*Js*)
+   \[HBar]eV = 6.582119569509066*10^-16;(*eVs*)
    ```
    ## 1 Vektoren ##
    ### Betrag eines Vektors
