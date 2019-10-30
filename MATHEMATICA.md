@@ -47,6 +47,8 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    Amplitude
    ```
+   MaxValue[func, t];
+   
    FindMaximum[x Cos[x], {x, 2}]
    FindMaximum[{x Cos[x], 1 <= x <= 15}, {x, 7}]
    ```
