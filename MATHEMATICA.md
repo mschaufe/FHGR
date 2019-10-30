@@ -81,7 +81,7 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    Frame -> True
    FrameLabel -> {{"links", None}, {"unten", "oben"}}
    FrameLabel -> {{"links", None}, {"unten", Style["oben", Black, 18]}},
-   FrameTicks -> {{Automatic, None}, {Range[0, 20, 5], None}
+   FrameTicks -> {{Automatic, None}, {Range[0, 20, 5], None}}
    ```
    
    #### PlotRange ####
