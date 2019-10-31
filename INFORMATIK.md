@@ -857,6 +857,9 @@ void print(std::vector<int> const &input)
 
 ### Liste mit Strings anlegen ###
 ```c++
+#include <list>
+```
+```c++
 std::list<std::string> lst {"first","second","third","fourth"};
 ```
 
