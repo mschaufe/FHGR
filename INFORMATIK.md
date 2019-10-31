@@ -819,6 +819,13 @@ Fügt ein Element am Ende des Vectors an.
 output.push_back(variable);
 ```
 
+### size ###
+Gibt die Anzahl der Elemente im Vektor an.
+```c++
+output.size()
+```
+
+### print ###
 Funktion um einen Vektor aus zu geben:
 ``` c++
 void print(std::vector<int> const &input)
