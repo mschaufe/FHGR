@@ -807,7 +807,19 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
 
 ## Vector ##
 
-Gibt einen Vector aus.
+### Vektor anlegen ###
+```c++
+std::vector<int> v = {3,1,1,2,1,3,3,3,1,5,1};
+std::vector<int> output ={};
+```
+
+### push_back ###
+Fügt ein Element am Ende des Vectors an.
+```c++
+output.push_back(variable);
+```
+
+Funktion um einen Vektor aus zu geben:
 ``` c++
 void print(std::vector<int> const &input)
 {
