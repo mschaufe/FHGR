@@ -807,7 +807,10 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
 
 ## Vector ##
 
-### Vektor anlegen ###
+#### Vektor anlegen ####
+```c++
+#include <vector>
+```
 ```c++
 std::vector<int> v = {3,1,1,2,1,3,3,3,1,5,1};
 std::vector<int> output ={};
@@ -819,13 +822,26 @@ Gibt die Anzahl der Elemente im Vektor an.
 ```c++
 output.size()
 ```
-### Element access: ###
 ### Modifiers: ###
 #### push_back ####
 Fügt ein Element am Ende des Vectors an.
 ```c++
 output.push_back(variable);
 ```
+#### pop_back ####
+Verkleinert den Vektor um eins. Das letzte Element wird somit gelöscht.
+```c++
+myvector.pop_back();
+```
+#### swap ####
+Tauscht die Werte der Vectoren.
+```c++
+std::vector<int> foo (3,100);   // three ints with a value of 100
+std::vector<int> bar (5,200);   // five ints with a value of 200
+foo.swap(bar);
+```
+
+
 ### functions ###
 #### print ####
 Funktion um einen Vektor aus zu geben:
