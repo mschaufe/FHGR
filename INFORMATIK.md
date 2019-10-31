@@ -805,5 +805,15 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
    
 # Semester III (C++)
 
+## Vector ##
 
+Gibt einen Vector aus.
+``` c++
+void print(std::vector<int> const &input)
+{
+    for (int i = 0; i < input.size(); i++) {
+        std::cout << input.at(i) << ' ';
+    }
+}
+```
 
