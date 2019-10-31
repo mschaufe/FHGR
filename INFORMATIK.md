@@ -813,19 +813,21 @@ std::vector<int> v = {3,1,1,2,1,3,3,3,1,5,1};
 std::vector<int> output ={};
 ```
 
-### push_back ###
-Fügt ein Element am Ende des Vectors an.
-```c++
-output.push_back(variable);
-```
-
-### size ###
+### Capacity: ###
+#### size ####
 Gibt die Anzahl der Elemente im Vektor an.
 ```c++
 output.size()
 ```
-
-### print ###
+### Element access: ###
+### Modifiers: ###
+#### push_back ####
+Fügt ein Element am Ende des Vectors an.
+```c++
+output.push_back(variable);
+```
+### functions ###
+#### print ####
 Funktion um einen Vektor aus zu geben:
 ``` c++
 void print(std::vector<int> const &input)
