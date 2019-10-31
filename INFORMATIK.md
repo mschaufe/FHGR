@@ -854,3 +854,40 @@ void print(std::vector<int> const &input)
 }
 ```
 ## Liste ##
+
+### Liste mit Strings anlegen ###
+```c++
+std::list<std::string> lst {"first","second","third","fourth"};
+```
+
+### Capacity: ###
+Gibt die Anzahl der Elemente in der Liste zurück
+```c++
+myints.size()
+```
+### Element access: ###
+#### front ####
+Zeigt auf das erste Element in der Liste
+```c
+mylist.front()
+```
+#### back ####
+Zeigt auf das letzte Element in der Liste
+```c
+mylist.back()
+```
+### Modifiers: ###
+#### push_back ####
+Fügt ein Element am Ende der Liste an.
+```c++
+mylist.push_back(myint);
+```
+#### pop_back ####
+Verkleinert die Liste um eins. Das letzte Element wird somit gelöscht.
+```c++
+mylist.pop_back();
+```
+
+
+
+
