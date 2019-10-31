@@ -812,21 +812,21 @@ Sie können verschiedene Voreinstellungen von 2 bis 128 wählen. Dadurch wird di
 #include <vector>
 ```
 ```c++
-std::vector<int> v = {3,1,1,2,1,3,3,3,1,5,1};
-std::vector<int> output ={};
+std::vector<int> myvector = {3,1,1,2,1};
+std::vector<int> myvector_empty ={};
 ```
 
 ### Capacity: ###
 #### size ####
 Gibt die Anzahl der Elemente im Vektor an.
 ```c++
-output.size()
+myvector.size()
 ```
 ### Modifiers: ###
 #### push_back ####
 Fügt ein Element am Ende des Vectors an.
 ```c++
-output.push_back(variable);
+myvector.push_back(variable);
 ```
 #### pop_back ####
 Verkleinert den Vektor um eins. Das letzte Element wird somit gelöscht.
