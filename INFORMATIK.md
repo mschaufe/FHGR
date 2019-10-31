@@ -842,7 +842,7 @@ foo.swap(bar);
 ```
 
 
-### functions ###
+### Functions ###
 #### print ####
 Funktion um einen Vektor aus zu geben:
 ``` c++
@@ -853,4 +853,4 @@ void print(std::vector<int> const &input)
     }
 }
 ```
-
+## Liste ##
