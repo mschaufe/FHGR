@@ -891,6 +891,17 @@ Verkleinert die Liste um eins. Das letzte Element wird somit gelöscht.
 mylist.pop_back();
 ```
 
+### Functions ###
+#### print ####
+Funktion um einen Vektor aus zu geben:
+``` c++
+void print(std::list<std::string> const &list)
+{
+    for (auto const& i: list) {
+        std::cout << i << "\n";
+    }
+}
+```
 
 
 
