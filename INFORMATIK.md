@@ -902,6 +902,14 @@ void print(std::list<std::string> const &list)
     }
 }
 ```
+## String ##
 
+### Print a string ###
 
-
+``` c++
+std::cout << someString << "\n";
+``` 
+oder
+``` c++
+printf("%s\n",someString.c_str());
+``` 
