@@ -904,7 +904,12 @@ void print(std::list<std::string> const &list)
 ```
 ## String ##
 
-### Print a string ###
+### Definieren ###
+``` c++
+std::string stringName("BlaBlablaa");
+``` 
+
+### Print ###
 
 ``` c++
 std::cout << someString << "\n";
@@ -913,3 +918,4 @@ oder
 ``` c++
 printf("%s\n",someString.c_str());
 ``` 
+### stoi ###
