@@ -40,8 +40,10 @@
    ### List ###
    Create Lists
    ```
-   List[2, 3, 5, 6]
+   l=List[2, 3, 5, 6];
+   l[[2]]
    ```
+   gibt 3 aus
    
    
    ## 3 Funktionen ##
