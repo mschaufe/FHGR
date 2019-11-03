@@ -36,8 +36,15 @@
    ```
    {a, b, c} . {x, y, z}
    ```
+   ## 2 Daten ##
+   ### List ###
+   Create Lists
+   ```
+   List[2, 3, 5, 6]
+   ```
    
-   ## 2 Funktionen ##
+   
+   ## 3 Funktionen ##
    ### Funktion ###
    Auf der linken Seite legen wir den Funktionsnamen fest, hier “f” und wählen einen Namen für das
 Argument der Funktion “x”. Beachten Sie das wichtige “x_” auf der linken Seite, das ein sogenanntes
@@ -123,7 +130,7 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
     ];
    ```
    
-   ## 4 Import ##
+   ## 5 Import ##
    
    ### Microsoft Excel ###
    Importiert die Excel-Datei in Mathematica.
