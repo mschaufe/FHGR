@@ -19,7 +19,16 @@
    | single-precision floating-point (7 Stellen)  | float          | 32  | 4     | 1.17E-38 .. 3.4E38              |
    | double-precision floating-point (19 Stellen) | double         | 64  | 8     | 2.2E-308 .. 1.8E308             |
 
-
+## 1. Head ##
+   ### Header comment ###
+   
+      /*****************************
+       * Marc Schaufelberger *
+       * FHGR *
+       * 00. XXX 2019 *
+       * Projekt *
+      ******************************/
+## Operatoren ##  
 ## Vector ##
 
 #### Vektor anlegen ####
