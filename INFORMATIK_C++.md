@@ -15,6 +15,7 @@ Import der `vector` library.
 ```c++
 #include <vector>
 ```
+Einen Vektor erstellen
 ```c++
 std::vector<int> myvector_empty;
 std::vector<int> myvector_empty ={};
