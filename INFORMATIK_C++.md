@@ -1,6 +1,5 @@
-# Semester III (C++)
-
-## Datentypen ##
+# Allgemein
+   ## Datentypen
    ### Signed / Unsigned ###
    Die ganzzahligen Typen können  `signed` oder `unsigned` sein (signed int, unsigned int): Dies weist darauf
    hin, ob im Binärwort für den Wert das erste Bit als Vorzeichenbit verwendet
@@ -19,7 +18,7 @@
    | single-precision floating-point (7 Stellen)  | float          | 32  | 4     | 1.17E-38 .. 3.4E38              |
    | double-precision floating-point (19 Stellen) | double         | 64  | 8     | 2.2E-308 .. 1.8E308             |
 
-## 1. Head ##
+## Head ##
    ### Header comment ###
    
       /*****************************
@@ -28,10 +27,10 @@
        * 00. XXX 2019 *
        * Projekt *
       ******************************/
-## Operatoren ##  
-## Vector ##
+# Operatoren
+# Vector
 
-#### Vektor anlegen ####
+## Deklarieren & Definieren ####
 ```c++
 #include <vector>
 ```
@@ -39,34 +38,31 @@
 std::vector<int> myvector = {3,1,1,2,1};
 std::vector<int> myvector_empty ={};
 ```
-
-### Capacity: ###
-#### size ####
+## Kapazität
+### size
 Gibt die Anzahl der Elemente im Vektor an.
 ```c++
 myvector.size()
 ```
-### Modifiers: ###
-#### push_back ####
+## Modifikatoren
+### push_back
 Fügt ein Element am Ende des Vectors an.
 ```c++
 myvector.push_back(variable);
 ```
-#### pop_back ####
+### pop_back
 Verkleinert den Vektor um eins. Das letzte Element wird somit gelöscht.
 ```c++
 myvector.pop_back();
 ```
-#### swap ####
+### swap
 Tauscht die Werte der Vectoren.
 ```c++
 std::vector<int> foo (3,100);   // three ints with a value of 100
 std::vector<int> bar (5,200);   // five ints with a value of 200
 foo.swap(bar);
 ```
-
-
-### Functions ###
+## Funktionen ##
 #### print ####
 Funktion um einen Vektor aus zu geben:
 ``` c++
@@ -77,9 +73,9 @@ void print(std::vector<int> const &input)
     }
 }
 ```
-## Liste ##
+# Liste
 
-### Liste mit Strings anlegen ###
+## Liste mit Strings anlegen
 ```c++
 #include <list>
 ```
@@ -128,7 +124,7 @@ void print(std::list<std::string> const &list)
 ```
 ## String ##
 
-### Definieren ###
+### Deklarieren & Definieren ###
 ``` c++
 std::string stringName("BlaBlablaa");
 ``` 
