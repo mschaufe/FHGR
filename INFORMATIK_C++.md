@@ -62,9 +62,7 @@ Funktion aufrufen
 print(myvector);
 ```
 
-
-
-# Liste
+# List
 ## Deklarieren & Definieren
 Import der `list` library.
 ```c++
@@ -128,13 +126,13 @@ print(mylist);
 std::string stringName("BlaBlablaa");
 ``` 
 
-### Print ###
+### Ausgabe ###
 
 ``` c++
 std::cout << someString << "\n";
 ``` 
 oder
-``` c++
+``` c
 printf("%s\n",someString.c_str());
 ``` 
 
