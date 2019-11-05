@@ -2,8 +2,7 @@
 #include "date.h"
 
 int main() {
-
-    Date d1(0,0,0);
+    Date d1;
     d1.setYear(2000);
     d1.setMonth(2);
     d1.setDay(1);

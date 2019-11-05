@@ -2,6 +2,8 @@
 #include <iostream>
 #include <ctime>
 
+Date::Date() {}
+
 Date::Date(int year, int month, int day){
     y = year;
     m = month;

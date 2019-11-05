@@ -1,0 +1,10 @@
+#ifndef STRINGSPLITJOIN_STRING_H
+#define STRINGSPLITJOIN_STRING_H
+
+
+class string {
+
+};
+
+
+#endif //STRINGSPLITJOIN_STRING_H

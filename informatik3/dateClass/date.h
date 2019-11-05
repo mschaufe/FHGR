@@ -3,6 +3,7 @@
 
 class Date {
 public:
+    Date();
     Date(int year, int month, int day);
 
     void setYear(int year);
@@ -23,5 +24,7 @@ private:
     int m;
     int d;
 };
+
+
 
 #endif //DATECLASS_DATE_H
