@@ -91,20 +91,20 @@ Zeigt auf das letzte Element in der Liste
 ```c
 mylist.back()
 ```
-### Modifikatoren
-#### push_back()
+## Modifikatoren
+### push_back()
 Fügt ein Element am Ende der Liste an.
 ```c++
 mylist.push_back(myint);
 ```
-#### pop_back()
+### pop_back()
 Verkleinert die Liste um eins. Das letzte Element wird somit gelöscht.
 ```c++
 mylist.pop_back();
 ```
 
-### Funktionen
-#### print()
+## Funktionen
+### print()
 Funktion um einen Vektor aus zu geben:
 ``` c++
 void print(std::list<std::string> const &list)
@@ -120,24 +120,15 @@ print(mylist);
 ```
 
 
-## String ##
-### Deklarieren & Definieren ###
+# String
+## Deklarieren & Definieren ###
 ``` c++
 std::string stringName("BlaBlablaa");
 ``` 
 
-### Ausgabe ###
-
-``` c++
-std::cout << someString << "\n";
-``` 
-oder
-``` c
-printf("%s\n",someString.c_str());
-``` 
-
-### substr ###
-#### Beispiel ####
+## substr()
+Liefert einen neuen String zwischen den beiden Positionen, die mitgegeben werden.
+### Beispiel ###
 ```c++
 #include <iostream>
 #include <string>
@@ -162,6 +153,14 @@ Ausgabe:
 ```c++
 think live in details.
 ```
-### stoi ###
+## stoi
+## Ausgabe 
 
+``` c++
+std::cout << someString << "\n";
+``` 
+oder
+``` c
+printf("%s\n",someString.c_str());
+``` 
 
