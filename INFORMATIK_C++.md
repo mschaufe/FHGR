@@ -126,6 +126,12 @@ print(mylist);
 std::string stringName("BlaBlablaa");
 ``` 
 
+## Kapazität
+### size()
+``` c++
+str.size()
+```
+
 ## substr()
 Liefert einen neuen String zwischen den beiden Positionen, die mitgegeben werden.
 ```c++
