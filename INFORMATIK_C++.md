@@ -47,8 +47,8 @@ std::vector<int> foo (3,100);   // three ints with a value of 100
 std::vector<int> bar (5,200);   // five ints with a value of 200
 foo.swap(bar);
 ```
-## Funktionen ##
-#### print ####
+## Funktionen 
+### print ()
 Funktion um einen Vektor aus zu geben:
 ``` c++
 void print(std::vector<int> const &input)
@@ -58,6 +58,12 @@ void print(std::vector<int> const &input)
     }
 }
 ```
+Funktion aufrufen
+``` c++
+print(myvector);
+```
+
+
 # Liste
 
 ## Liste mit Strings anlegen
@@ -68,36 +74,36 @@ void print(std::vector<int> const &input)
 std::list<std::string> lst {"first","second","third","fourth"};
 ```
 
-### Capacity: ###
+### Capacity: 
 Gibt die Anzahl der Elemente in der Liste zurück
 ```c++
 myints.size()
 ```
-### Element access: ###
-#### front ####
+### Element access: 
+#### front 
 Zeigt auf das erste Element in der Liste
 ```c
 mylist.front()
 ```
-#### back ####
+#### back 
 Zeigt auf das letzte Element in der Liste
 ```c
 mylist.back()
 ```
-### Modifiers: ###
-#### push_back ####
+### Modifiers: 
+#### push_back
 Fügt ein Element am Ende der Liste an.
 ```c++
 mylist.push_back(myint);
 ```
-#### pop_back ####
+#### pop_back
 Verkleinert die Liste um eins. Das letzte Element wird somit gelöscht.
 ```c++
 mylist.pop_back();
 ```
 
-### Functions ###
-#### print ####
+### Functions
+#### print()
 Funktion um einen Vektor aus zu geben:
 ``` c++
 void print(std::list<std::string> const &list)
