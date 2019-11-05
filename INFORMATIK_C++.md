@@ -156,6 +156,7 @@ think live in details.
 ```
 ### stoi
 ## For Schleife
+Widerholt sich so viel mal, wie der `string` lang ist.
 ```c++
 std::string str = ???;
 for(char& c : str) {
