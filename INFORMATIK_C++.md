@@ -132,7 +132,7 @@ std::string stringName("BlaBlablaa");
 str.size()
 ```
 
-## substr()
+### substr()
 Liefert einen neuen String zwischen den beiden Positionen, die mitgegeben werden.
 ```c++
 #include <iostream>
@@ -154,7 +154,14 @@ Ausgabe:
 ```c++
 think live in details.
 ```
-## stoi
+### stoi
+## For Schleife
+```c++
+std::string str = ???;
+for(char& c : str) {
+    do_things_with(c);
+}
+```
 ## Ausgabe 
 
 ``` c++
