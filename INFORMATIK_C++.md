@@ -10,7 +10,8 @@
 # Operatoren
 # Vector
 
-## Deklarieren & Definieren ####
+## Deklarieren & Definieren
+Import der `vector` library.
 ```c++
 #include <vector>
 ```
