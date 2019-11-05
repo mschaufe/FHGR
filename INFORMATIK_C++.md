@@ -9,7 +9,6 @@
       ******************************/
 # Operatoren
 # Vector
-
 ## Deklarieren & Definieren
 Import der `vector` library.
 ```c++
@@ -64,45 +63,49 @@ print(myvector);
 ```
 
 
-# Liste
 
-## Liste mit Strings anlegen
+# Liste
+## Deklarieren & Definieren
+Import der `list` library.
 ```c++
 #include <list>
 ```
+Eine liste erstellen
 ```c++
+std::list<int> first;
 std::list<std::string> lst {"first","second","third","fourth"};
 ```
 
-### Capacity: 
-Gibt die Anzahl der Elemente in der Liste zurück
+## Kapazität 
+### size()
+Gibt die Anzahl der Elemente in der Liste in `int` zurück.
 ```c++
 myints.size()
 ```
-### Element access: 
-#### front 
+## Element Zugriff 
+#### front()
 Zeigt auf das erste Element in der Liste
 ```c
 mylist.front()
 ```
-#### back 
+### back()
 Zeigt auf das letzte Element in der Liste
 ```c
 mylist.back()
 ```
-### Modifiers: 
-#### push_back
+### Modifikatoren
+#### push_back()
 Fügt ein Element am Ende der Liste an.
 ```c++
 mylist.push_back(myint);
 ```
-#### pop_back
+#### pop_back()
 Verkleinert die Liste um eins. Das letzte Element wird somit gelöscht.
 ```c++
 mylist.pop_back();
 ```
 
-### Functions
+### Funktionen
 #### print()
 Funktion um einen Vektor aus zu geben:
 ``` c++
@@ -113,8 +116,13 @@ void print(std::list<std::string> const &list)
     }
 }
 ```
-## String ##
+Funktion aufrufen
+``` c++
+print(mylist);
+```
 
+
+## String ##
 ### Deklarieren & Definieren ###
 ``` c++
 std::string stringName("BlaBlablaa");
