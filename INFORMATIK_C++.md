@@ -24,23 +24,23 @@ std::vector<int> second (4,100);    // four ints with value 100
 std::vector<int> fourth (second);   // a copy of third
 ```
 ## Kapazität
-### size
+### size()
 Gibt die Anzahl der Elemente im Vektor an.
 ```c++
 myvector.size()
 ```
 ## Modifikatoren
-### push_back
+### push_back()
 Fügt ein Element am Ende des Vectors an.
 ```c++
 myvector.push_back(variable);
 ```
-### pop_back
+### pop_back()
 Verkleinert den Vektor um eins. Das letzte Element wird somit gelöscht.
 ```c++
 myvector.pop_back();
 ```
-### swap
+### swap()
 Tauscht die Werte der Vectoren.
 ```c++
 std::vector<int> foo (3,100);   // three ints with a value of 100
