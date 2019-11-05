@@ -128,7 +128,6 @@ std::string stringName("BlaBlablaa");
 
 ## substr()
 Liefert einen neuen String zwischen den beiden Positionen, die mitgegeben werden.
-### Beispiel ###
 ```c++
 #include <iostream>
 #include <string>
