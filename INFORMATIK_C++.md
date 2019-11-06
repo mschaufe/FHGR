@@ -68,7 +68,7 @@ for (decltype(v.size()) i = 0; i < v.size(); ++i)
 ```
 alternativ
 ```c++
-for (decltype(v.size()) i = 0; i < v.size(); ++i)
+for (auto& element : v) { ... }
 ```
 
 # List
