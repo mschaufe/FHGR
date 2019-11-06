@@ -20,7 +20,7 @@ std::vector<int> myvector_empty;
 std::vector<int> myvector_empty ={};
 std::vector<int> myvector = {3,1,1,2,1};
 std::vector<int> second (4,100);    // four ints with value 100
-std::vector<int> fourth (second);   // a copy of third
+std::vector<int> fourth (second);   // a copy of second
 ```
 ## Kapazität
 ### size()
