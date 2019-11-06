@@ -48,7 +48,7 @@ foo.swap(bar);
 ```
 ## Funktionen 
 ### print ()
-Funktion um einen Vektor aus zu geben:
+Funktion um einen Vektor aus zu geben: (print vector)
 ``` c++
 void print(std::vector<int> const &input)
 {
@@ -105,7 +105,7 @@ mylist.pop_back();
 
 ## Funktionen
 ### print()
-Funktion um einen Vektor aus zu geben:
+Funktion um einen Liste aus zu geben: (print list)
 ``` c++
 void print(std::list<std::string> const &list)
 {
