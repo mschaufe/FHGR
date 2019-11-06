@@ -61,6 +61,15 @@ Funktion aufrufen
 ``` c++
 print(myvector);
 ```
+## For Schleife
+Damit beide den geleichen Datentyp haben, braucht es `decltype`.
+```c++
+for (decltype(v.size()) i = 0; i < v.size(); ++i)
+```
+alternativ
+```c++
+for (decltype(v.size()) i = 0; i < v.size(); ++i)
+```
 
 # List
 ## Deklarieren & Definieren
