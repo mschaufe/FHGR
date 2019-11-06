@@ -122,6 +122,11 @@ print(mylist);
 
 # String
 ## Deklarieren & Definieren ###
+Import der `string` library.
+```c++
+#include <string>
+```
+Erstellt einen String
 ``` c++
 std::string stringName("BlaBlablaa");
 ``` 
