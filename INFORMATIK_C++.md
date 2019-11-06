@@ -62,13 +62,17 @@ Funktion aufrufen
 print(myvector);
 ```
 ## For Schleife
-Damit beide den geleichen Datentyp haben, braucht es `decltype`.
+Damit beide den geleichen Datentyp haben, kann man `decltype` verwenden. In diesem Fall bekommt i den Datentyp, den v.size() hat.
 ```c++
-for (decltype(v.size()) i = 0; i < v.size(); ++i)
+for (decltype(v.size()) i = 0; i < v.size(); ++i){
+}
 ```
 alternativ
 ```c++
-for (auto& element : v) { ... }
+std::vector<int> v = {0, 1, 2, 3, 4, 5};
+for (const int& i : v) // access by const reference
+        std::cout << i << ' ';
+    std::cout << '\n';
 ```
 
 # List
