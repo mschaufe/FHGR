@@ -3,6 +3,3 @@
 
 CMakeFiles/stringSplitJoin.dir/main.cpp.o: ../main.cpp
 
-CMakeFiles/stringSplitJoin.dir/string.cpp.o: ../string.cpp
-CMakeFiles/stringSplitJoin.dir/string.cpp.o: ../string.h
-

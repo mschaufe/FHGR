@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/ms/Documents/GitHub/HTW/informatik3/stringSplitJoin/main.cpp" "/Users/ms/Documents/GitHub/HTW/informatik3/stringSplitJoin/cmake-build-debug/CMakeFiles/stringSplitJoin.dir/main.cpp.o"
-  "/Users/ms/Documents/GitHub/HTW/informatik3/stringSplitJoin/string.cpp" "/Users/ms/Documents/GitHub/HTW/informatik3/stringSplitJoin/cmake-build-debug/CMakeFiles/stringSplitJoin.dir/string.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

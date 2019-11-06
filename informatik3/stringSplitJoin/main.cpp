@@ -2,7 +2,7 @@
    * Marc Schaufelberger *
    * FHGR *
    * 23. Okt 2019 *
-   * String splitting and joining *
+   * Exercise 2.1: splitting & joining *
   ******************************/
 
 #include <iostream>

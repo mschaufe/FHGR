@@ -150,33 +150,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/stringSplitJoin.dir/build.make CMakeFiles/stringSplitJoin.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-string.o: string.cpp.o
-
-.PHONY : string.o
-
-# target to build an object file
-string.cpp.o:
-	$(MAKE) -f CMakeFiles/stringSplitJoin.dir/build.make CMakeFiles/stringSplitJoin.dir/string.cpp.o
-.PHONY : string.cpp.o
-
-string.i: string.cpp.i
-
-.PHONY : string.i
-
-# target to preprocess a source file
-string.cpp.i:
-	$(MAKE) -f CMakeFiles/stringSplitJoin.dir/build.make CMakeFiles/stringSplitJoin.dir/string.cpp.i
-.PHONY : string.cpp.i
-
-string.s: string.cpp.s
-
-.PHONY : string.s
-
-# target to generate assembly for a file
-string.cpp.s:
-	$(MAKE) -f CMakeFiles/stringSplitJoin.dir/build.make CMakeFiles/stringSplitJoin.dir/string.cpp.s
-.PHONY : string.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +162,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... string.o"
-	@echo "... string.i"
-	@echo "... string.s"
 .PHONY : help
 
 

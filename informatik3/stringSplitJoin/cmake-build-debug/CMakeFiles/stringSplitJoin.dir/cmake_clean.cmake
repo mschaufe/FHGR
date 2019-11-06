@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/stringSplitJoin.dir/main.cpp.o"
-  "CMakeFiles/stringSplitJoin.dir/string.cpp.o"
   "stringSplitJoin"
   "stringSplitJoin.pdb"
 )

@@ -1,3 +1,10 @@
+/*****************************
+   * Marc Schaufelberger *
+   * FHGR *
+   * 22. Okt 2019 *
+   * Exercise 2.1: Date Class  *
+  ******************************/
+
 #include <iostream>
 #include "date.h"
 

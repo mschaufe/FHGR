@@ -83,12 +83,6 @@
 		<Unit filename="/Users/ms/Documents/GitHub/HTW/informatik3/stringSplitJoin/main.cpp">
 			<Option target="stringSplitJoin"/>
 		</Unit>
-		<Unit filename="/Users/ms/Documents/GitHub/HTW/informatik3/stringSplitJoin/string.cpp">
-			<Option target="stringSplitJoin"/>
-		</Unit>
-		<Unit filename="/Users/ms/Documents/GitHub/HTW/informatik3/stringSplitJoin/string.h">
-			<Option target="stringSplitJoin"/>
-		</Unit>
 		<Unit filename="/Users/ms/Documents/GitHub/HTW/informatik3/stringSplitJoin/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
