@@ -131,7 +131,26 @@ std::string stringName("BlaBlablaa");
 ``` c++
 str.size()
 ```
-
+### Iteratoren cbegin()
+Zählt alle `integer` in der Liste.
+```c++
+std::list<int> ints {1, 2, 4, 8, 16};
+// Sums all integers in the list ints (if any), printing only the result.
+	int sum = 0;
+	for (auto it = ints.cbegin(); it != ints.cend(); it++)
+		sum += *it;
+	std::cout << "Sum of ints: " << sum << "\n";
+```
+### Iteratoren begin()
+Zählt alle `string` in der Liste.
+```c++
+std::list<std::string> fruits {"orange", "apple", "raspberry"};
+// Prints the first fruit in the list fruits, without checking if there is one.
+	std::cout << "First fruit: " << *fruits.begin() << "\n";
+ 
+	if (empty.begin() == empty.end())
+		std::cout << "list 'empty' is indeed empty.\n";
+```
 ### substr()
 Liefert einen neuen String zwischen den beiden Positionen, die mitgegeben werden.
 ```c++
