@@ -16,8 +16,8 @@ public:
 
     void print();
 
-    void daysSince2000();
-    void daysUntil(Date* reference_date);
+    double daysSince2000();
+    double daysUntil(Date* reference_date);
 
 private:
     int y;

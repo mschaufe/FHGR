@@ -22,11 +22,11 @@ int main() {
 
     std::cout << "\n";
 
-    d1.daysSince2000();
-    d2.daysSince2000();
+    std::cout << d1.daysSince2000() << "\n";
+    std::cout << d2.daysSince2000() << "\n";
 
-    d1.daysUntil(&d2);
-    d2.daysUntil(&d1);
+    std::cout << d1.daysUntil(&d2) << "\n";
+    std::cout << d2.daysUntil(&d1) << "\n";
 
     return 0;
 }

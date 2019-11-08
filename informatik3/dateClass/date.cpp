@@ -39,7 +39,7 @@ void Date::print(){
 }
 
 
-void Date::daysSince2000(){
+double Date::daysSince2000(){
     struct std::tm a = {0,0,0,1,0,2000-1900};
     struct std::tm b = {0,0,0,d,m-1,y-1900};
     std::time_t x = std::mktime(&a);
@@ -47,13 +47,11 @@ void Date::daysSince2000(){
     if ( x != (std::time_t)(-1) && y != (std::time_t)(-1) )
     {
         double difference = std::difftime(y, x) / (60 * 60 * 24);
-        //std::cout << std::ctime(&x);
-        //std::cout << std::ctime(&y);
-        std::cout <<difference << std::endl;
+        return difference;
     }
 }
 
-void Date::daysUntil(Date* reference_date){
+double Date::daysUntil(Date* reference_date){
     struct std::tm a = {0,0,0,d,m-1,y-1900};
     struct std::tm b = {0,0,0,reference_date->getDay(),reference_date->getMonth()-1,reference_date->getYear()-1900};
     std::time_t x = std::mktime(&a);
@@ -61,7 +59,7 @@ void Date::daysUntil(Date* reference_date){
     if ( x != (std::time_t)(-1) && y != (std::time_t)(-1) )
     {
         double difference = std::difftime(y, x) / (60 * 60 * 24);
-        std::cout <<difference << std::endl;
+        return difference;
     }
 }
 
