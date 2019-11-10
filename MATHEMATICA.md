@@ -41,7 +41,7 @@
    {a, b, c} . {x, y, z}
    ```
    ## 2 Daten ##
-   ### List ###
+   ### List (Array)###
    Create Lists
    ```
    l=List[2, 3, 5, 6];
