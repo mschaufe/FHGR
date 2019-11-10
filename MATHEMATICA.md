@@ -19,6 +19,10 @@
    \[HBar] = h/(2 Pi);(*Js*)
    \[HBar]eV = 6.582119569509066*10^-16;(*eVs*)
    ```
+   Maximale photometrische Strahlungsäquivalent
+   ```
+   Km = 683;(*lm/W*)
+   ```
    ## 1 Vektoren ##
    ### Betrag eines Vektors
    Der Betrag eines Vektors entspricht der Länge dieses Vektors.
