@@ -41,13 +41,19 @@
    {a, b, c} . {x, y, z}
    ```
    ## 2 Daten ##
-   ### List (Array)###
+   ### List (Array)
    Create Lists
    ```
    l=List[2, 3, 5, 6];
    l[[2]]
    ```
    gibt 3 aus
+   
+   ### ConstantArray
+   Generiert in diesem Fall eine Liste mit 10 c.
+   ```
+   ConstantArray[c, 10]
+   ```
    
    
    ## 3 Funktionen ##
