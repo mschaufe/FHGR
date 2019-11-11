@@ -54,7 +54,12 @@
    ```
    ConstantArray[c, 10]
    ```
-   
+   ### Join
+   Fügt Listen zusammen
+   ```
+   Join[{a, b, r}, {x, y}, {t, u}]
+   ```
+   gibt {a, b, r, x, y, t, u} zurück.
    
    ## 3 Funktionen ##
    ### Funktion ###
