@@ -104,6 +104,11 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    
    ### Plot Optionen ###
    
+   #### PlotTheme
+   ```
+   PlotTheme -> "Detailed"
+   ```
+  
    #### Frame ####
    Umrandet die Grafik
    ```
