@@ -177,4 +177,7 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    ```
    `HeavisideTheta[x]` gibt 0 für alle negativen und 1 für alle positiven Zahlen ausser der Zahl 0.
    ### Fourier-Rücktransformation
+   ```
+   InverseFourierTransform[Sin[w]*Exp[-Abs[w]], w, t, FourierParameters -> {1, -1}]
+   ```
   
