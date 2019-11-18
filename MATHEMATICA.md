@@ -168,5 +168,13 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    {"Data", # of sheet(s), # of row(s), # of column(s)}
    ```
    
+   ## 5 Fourier ##
    
+   ### Fourier-Transformation
+   ```
+   FourierTransform[Exp[-t^2/2], t, w, FourierParameters -> {1, -1}]
+   FourierTransform[HeavisideTheta[t] Exp[-7*t], t, w, FourierParameters -> {1, -1}]
+   ```
+   `HeavisideTheta[x]` gibt 0 für alle negativen und 1 für alle positiven Zahlen ausser der Zahl 0.
+   ### Fourier-Rücktransformation
   
