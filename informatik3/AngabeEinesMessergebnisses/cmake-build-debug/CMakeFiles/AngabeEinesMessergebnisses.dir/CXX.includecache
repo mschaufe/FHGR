@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ms/Documents/GitHub/HTW/informatik3/AngabeEinesMessergebnisses/main.cpp
+iostream
+-
+string
+-
+iomanip
+-
+tgmath.h
+-
+cmath
+-
+

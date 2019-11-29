@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ms/Documents/GitHub/HTW/informatik3/serialPortMarc/SerialPort.hpp
+unistd.h
+-
+
+/Users/ms/Documents/GitHub/HTW/informatik3/serialPortMarc/TypeAbbreviations.hpp
+cstddef
+-
+cstdint
+-
+vector
+-
+
+/Users/ms/Documents/GitHub/HTW/informatik3/serialPortMarc/main.cpp
+SerialPort.hpp
+/Users/ms/Documents/GitHub/HTW/informatik3/serialPortMarc/SerialPort.hpp
+TypeAbbreviations.hpp
+/Users/ms/Documents/GitHub/HTW/informatik3/serialPortMarc/TypeAbbreviations.hpp
+iostream
+-
+
