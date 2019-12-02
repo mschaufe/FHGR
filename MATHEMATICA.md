@@ -168,6 +168,15 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    {"Data", # of sheet(s), # of row(s), # of column(s)}
    ```
    
+   ### Text
+   
+   Das gleiche für .txt
+   ```
+   Import["data.txt", "Table"];
+   Import["data.txt", {"Data", All, 2}]
+   ```
+   Das erste importiert die Tabelle mit Arrays und das zweite speichert nur die zweite Spalte in eine Liste. 
+   
    ## 5 Fourier ##
    
    ### Fourier-Transformation
