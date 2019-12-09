@@ -23,6 +23,20 @@
    ```
    Km = 683;(*lm/W*)
    ```
+   
+   Universelle Gaskonstante
+   ```
+   R = 8.314462;(* Universelle Gaskonstante *) 
+   ```
+   Boltzmann-Konstante
+   ```
+   k = 1.3806488*10^23;(* Boltzmann-Konstante *)
+   ```
+   Avogadro-Konstante
+   ```
+   Na = 6.022140857*10^23;(* Avogadro-Konstante *)
+   ```
+   
    ## 1 Vektoren ##
    ### Betrag eines Vektors
    Der Betrag eines Vektors entspricht der Länge dieses Vektors.
