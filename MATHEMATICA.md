@@ -117,7 +117,7 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    Es muss um Plot ein Print stehen!
    
    ### Plot two lists  ###
-   Wenn man zwei Listen plotten möchte, dann sollte fügt man mit `Transpose` die beiden Listen zusammen und gibt Sie mit `ListPlot`aus. X und y sind in diesem Beispiel Listen.
+   Wenn man zwei Listen plotten möchte, dann fügt man mit `Transpose` die beiden Listen zusammen und gibt sie mit `ListPlot`aus. X und y sind in diesem Beispiel Listen.
    ```
    data = Transpose[{x, y}];
    ListPlot[data, PlotTheme -> "Detailed"]
