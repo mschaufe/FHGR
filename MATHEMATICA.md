@@ -211,3 +211,13 @@ Pattern bezeichnet. Auf der rechten Seite von “:=” steht dann die eigentlich
    InverseFourierTransform[Sin[w]*Exp[-Abs[w]], w, t, FourierParameters -> {1, -1}]
    ```
   
+  ## 6 Faltung
+  
+  ### Zwei Listen falten
+  ```
+  a = {0, 1, -1, 0.5, 0};
+  b = {0, 1, 1, 1, 0};
+  ListConvolve[a, b, {1, -1}, 0]
+  ```
+  
+  
