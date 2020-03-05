@@ -42,30 +42,12 @@ int main(int argc, char** argv) {
     }
     std::cout << std::endl;
 
-    char winName[20];
-    
     // show passed pictures
-    for (size_t i = 0; i < argc-1; ++i) {
+    for (int i = 1; i < argc; ++i) {
         // load file path in array
         image_array[i] = cv::imread(argv[i], cv::IMREAD_COLOR);
-
-        // get filename form path in a string
-        std::string mywinName = getFilenameFromPath(argv[i]);
-
-        // convert string to char[]
-        char cWinName[mywinName.size() + 1];
-        strcpy(cWinName, mywinName.c_str());	// or pass &s[0]
-
-        std::cout << cWinName << '\n';
-
-        //printf("Pic: %s",cWinName);
-        sprintf(winName,"Pic: %s",cWinName);
-        // show original images
-        cv::imshow(winName, image_array[i]);
+        cv::imshow(getFilenameFromPath(argv[i]), image_array[i]);
     }
-
-
-    std::cout << std::endl;
 
     cv::waitKey(0);
 
