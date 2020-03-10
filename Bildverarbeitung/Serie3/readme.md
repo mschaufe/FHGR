@@ -1,3 +1,3 @@
 # Serie 3 - Punktoperationen (Helligkeitsoperationen)
 ## Funktionen
-Habe eine funktion `imgToHistogram`, die gibt mir das Histogram zurück und dann kann ich es entweder ausgeben oder speichern. Im code habe ich beides gemacht. 
+Habe eine Funktion `imgToHistogram`, die mir das Histogram zurück gibt, damit ich es ausgeben oder speichern kann. Im Code habe ich beides gemacht. 
