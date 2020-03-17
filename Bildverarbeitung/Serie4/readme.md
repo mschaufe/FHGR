@@ -1,3 +1,3 @@
 # Serie 4
-## Noch in bearbeitung
+## Teilaufgabe b) war für mich unklar.
 Marc Schaufelberger
