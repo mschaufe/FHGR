@@ -68,14 +68,12 @@ static void selection_completed() {
     }
 
     cv::Rect box (ptButtonDownPos.x,ptButtonDownPos.y,width,height);
-
-
     cout << "rect info. : " << box <<  endl;
 
     cv::Size sz(img.size().width,img.size().height);
-    cv::Mat mask(sz,img.type(), cv::Scalar(255, 255, 255));
+    cv::Mat mask(sz, img.type(), cv::Scalar(255, 255, 255));
 
-    cv::Mat crop(img,box);
+    cv::Mat crop(mask,box);
 
     imshow("selected region",crop);
 
