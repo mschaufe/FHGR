@@ -1,0 +1,3 @@
+/Users/marc/Documents/GitHub/FHGR/Bildverarbeitung/Serie5/Maskenoperationen/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/marc/Documents/GitHub/FHGR/Bildverarbeitung/Serie5/Maskenoperationen/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/marc/Documents/GitHub/FHGR/Bildverarbeitung/Serie5/Maskenoperationen/cmake-build-debug/CMakeFiles/Maskenoperationen.dir
