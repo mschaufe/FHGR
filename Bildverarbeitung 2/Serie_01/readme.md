@@ -2,4 +2,4 @@
 Marc Schaufelberger
 
 <br>
-Noch in bearbeitung
+Noch ein paar Fehler, die noch nicht gelöst sind.
