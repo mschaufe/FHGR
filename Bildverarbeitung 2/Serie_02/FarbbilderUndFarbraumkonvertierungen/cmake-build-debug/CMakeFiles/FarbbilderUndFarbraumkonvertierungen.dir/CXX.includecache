@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/marc/Documents/GitHub/FHGR/Bildverarbeitung 2/Serie_02/FarbbilderUndFarbraumkonvertierungen/main.cpp
+iostream
+-
+
