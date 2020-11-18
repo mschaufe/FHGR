@@ -1,0 +1,3 @@
+/Users/marc/Documents/GitHub/FHGR/Bildverarbeitung 2/Serie_08/ocvRGBclustering/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/marc/Documents/GitHub/FHGR/Bildverarbeitung 2/Serie_08/ocvRGBclustering/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/marc/Documents/GitHub/FHGR/Bildverarbeitung 2/Serie_08/ocvRGBclustering/cmake-build-debug/CMakeFiles/ocvRGBclustering.dir
